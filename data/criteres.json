@@ -1,0 +1,41 @@
+{
+  "loyer_max_chf": 1600,
+  "_note_loyer": "Charges comprises. Fixé par Stefan le 2026-09-06. Pilote la collecte (collecte_flatfox.py) ET le curseur du tableau de bord.",
+  "sejour": {
+    "debut": "2026-10-01",
+    "fin": "2027-03-31",
+    "libelle": "octobre 2026 → mars 2027"
+  },
+  "types_acceptes": [
+    "SHARED",
+    "ROOM",
+    "APARTMENT",
+    "STUDIO"
+  ],
+  "tranches_prix": [
+    {
+      "code": "P1",
+      "label": "≤ 700",
+      "max_chf": 700,
+      "verdict": "Rare à Zurich — chambre en WG partagée ou sous-location amicale"
+    },
+    {
+      "code": "P2",
+      "label": "701–1 000",
+      "max_chf": 1000,
+      "verdict": "Le cœur du marché de la colocation"
+    },
+    {
+      "code": "P3",
+      "label": "1 001–1 300",
+      "max_chf": 1300,
+      "verdict": "Belle chambre en WG, ou studio en périphérie"
+    },
+    {
+      "code": "P4",
+      "label": "1 301–1 600",
+      "max_chf": 1600,
+      "verdict": "Haut du budget — studio ou 1 pièce individuel"
+    }
+  ]
+}

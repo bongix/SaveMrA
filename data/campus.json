@@ -1,0 +1,18 @@
+{
+  "campus": {
+    "zentrum": {
+      "nom": "ETH Zentrum (Hauptgebäude)",
+      "adresse": "Rämistrasse 101, 8092 Zürich",
+      "arret": "Zürich, ETH/Universitätsspital",
+      "note": "Campus historique, mitoyen de l'UZH. Ce n'est PAS le lieu de stage : conservé comme second repère, utile si MrA a des cours, séminaires ou une bibliothèque en ville."
+    },
+    "hoenggerberg": {
+      "nom": "ETH Hönggerberg — HCI (chimie inorganique)",
+      "adresse": "Laboratorium für Anorganische Chemie, Vladimir-Prelog-Weg 1-5/10, 8093 Zürich",
+      "arret": "Zürich, ETH Hönggerberg",
+      "note": "Bâtiment HCI, au nord du campus Science City. Desservi par les bus 69 (depuis Milchbuck) et 80 (depuis Oerlikon / Bucheggplatz). C'est le lieu de stage confirmé de MrA."
+    }
+  },
+  "campus_principal": "hoenggerberg",
+  "_commentaire": "campus_principal = hoenggerberg, confirmé le 2026-09-06 par l'adresse du labo (Vladimir-Prelog-Weg = bâtiment HCI). Le temps vers ETH Zentrum reste calculé et affiché."
+}

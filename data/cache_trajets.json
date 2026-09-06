@@ -1,0 +1,1848 @@
+{
+  "Zürich, Oerlikon||Zürich, ETH/Universitätsspital": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "S 19 → T 10",
+    "depuis": "Zürich Oerlikon",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Oerlikon||Zürich, ETH Hönggerberg": {
+    "minutes": 11,
+    "changements": 1,
+    "resume": "B 61 → B 80",
+    "depuis": "Zürich Oerlikon, Bahnhof",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3866,8.5233": {
+    "nom": "Zürich, Löwenbräu",
+    "distance_m": 289
+  },
+  "stop@47.4538,8.5916": {
+    "nom": "Kloten, Geissbergstrasse",
+    "distance_m": 117
+  },
+  "Kloten, Geissbergstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 38,
+    "changements": 2,
+    "resume": "B 735 → S 7 → T 10",
+    "depuis": "Kloten, Geissbergstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Kloten, Geissbergstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 36,
+    "changements": 2,
+    "resume": "B 735 → S 7 → B 80",
+    "depuis": "Kloten, Geissbergstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4194,8.549": {
+    "nom": "Zürich, Seebacherplatz",
+    "distance_m": 71
+  },
+  "Zürich, Seebacherplatz||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 2,
+    "resume": "T 51 → T 7 → T 6",
+    "depuis": "Zürich, Seebacherplatz",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Seebacherplatz||Zürich, ETH Hönggerberg": {
+    "minutes": 11,
+    "changements": 0,
+    "resume": "B 42",
+    "depuis": "Zürich, Seebacherplatz",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3798,8.537": {
+    "nom": "Zürich, Sihlquai/HB",
+    "distance_m": 50
+  },
+  "Zürich, Sihlquai/HB||Zürich, ETH/Universitätsspital": {
+    "minutes": 11,
+    "changements": 0,
+    "resume": "T 6",
+    "depuis": "Zürich, Sihlquai/HB",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Sihlquai/HB||Zürich, ETH Hönggerberg": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "T 50 → B 80",
+    "depuis": "Zürich, Sihlquai/HB",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4066,8.6137": {
+    "nom": "Dübendorf, Zwinggarten",
+    "distance_m": 522
+  },
+  "Dübendorf, Zwinggarten||Zürich, ETH/Universitätsspital": {
+    "minutes": 31,
+    "changements": 2,
+    "resume": "B 748 → S 3 → T 9",
+    "depuis": "Dübendorf, Zwinggarten",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Dübendorf, Zwinggarten||Zürich, ETH Hönggerberg": {
+    "minutes": 32,
+    "changements": 2,
+    "resume": "B 748 → S 14 → B 80",
+    "depuis": "Dübendorf, Zwinggarten",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3729,8.4906": {
+    "nom": "Zürich, Goldackerweg",
+    "distance_m": 230
+  },
+  "Zürich, Goldackerweg||Zürich, ETH/Universitätsspital": {
+    "minutes": 27,
+    "changements": 1,
+    "resume": "B 80 → T 14",
+    "depuis": "Zürich, Goldackerweg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Goldackerweg||Zürich, ETH Hönggerberg": {
+    "minutes": 21,
+    "changements": 0,
+    "resume": "B 80",
+    "depuis": "Zürich, Goldackerweg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3801,8.5272": {
+    "nom": "Zürich, Militär-/Langstrasse",
+    "distance_m": 64
+  },
+  "Zürich, Militär-/Langstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 15,
+    "changements": 1,
+    "resume": "B 31 → T 6",
+    "depuis": "Zürich, Militär-/Langstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Militär-/Langstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 1,
+    "resume": "B 32 → B 69",
+    "depuis": "Zürich, Militär-/Langstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3592,8.5219": {
+    "nom": "Zürich, Sihlcity Nord",
+    "distance_m": 125
+  },
+  "Zürich, Sihlcity Nord||Zürich, ETH/Universitätsspital": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "T 13 → T 10",
+    "depuis": "Zürich, Sihlcity Nord",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Sihlcity Nord||Zürich, ETH Hönggerberg": {
+    "minutes": 30,
+    "changements": 1,
+    "resume": "B 72 → B 69",
+    "depuis": "Zürich, Sihlcity Nord",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4527,8.5786": {
+    "nom": "Kloten, Zum Wilden Mann",
+    "distance_m": 155
+  },
+  "Kloten, Zum Wilden Mann||Zürich, ETH/Universitätsspital": {
+    "minutes": 37,
+    "changements": 1,
+    "resume": "B 733 → T 10",
+    "depuis": "Kloten, Zum Wilden Mann",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Kloten, Zum Wilden Mann||Zürich, ETH Hönggerberg": {
+    "minutes": 30,
+    "changements": 2,
+    "resume": "B 765 → S 2 → B 80",
+    "depuis": "Kloten, Zum Wilden Mann",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3818,8.5353": {
+    "nom": "Zürich, Museum für Gestaltung",
+    "distance_m": 45
+  },
+  "Zürich, Museum für Gestaltung||Zürich, ETH/Universitätsspital": {
+    "minutes": 12,
+    "changements": 2,
+    "resume": "T 51 → B 46 → T 6",
+    "depuis": "Zürich, Museum für Gestaltung",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Museum für Gestaltung||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 2,
+    "resume": "T 17 → B 32 → B 69",
+    "depuis": "Zürich, Museum für Gestaltung",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4009,8.5782": {
+    "nom": "Zürich, Roswiesen",
+    "distance_m": 246
+  },
+  "Zürich, Roswiesen||Zürich, ETH/Universitätsspital": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Roswiesen",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Roswiesen||Zürich, ETH Hönggerberg": {
+    "minutes": 20,
+    "changements": 1,
+    "resume": "T 7 → B 69",
+    "depuis": "Zürich, Roswiesen",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4008,8.5782": {
+    "nom": "Zürich, Roswiesen",
+    "distance_m": 256
+  },
+  "stop@47.3591,8.5529": {
+    "nom": "Zürich, Höschgasse",
+    "distance_m": 156
+  },
+  "Zürich, Höschgasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 12,
+    "changements": 1,
+    "resume": "T 15 → T 9",
+    "depuis": "Zürich, Höschgasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Höschgasse||Zürich, ETH Hönggerberg": {
+    "minutes": 29,
+    "changements": 2,
+    "resume": "T 15 → T 7 → B E",
+    "depuis": "Zürich, Höschgasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4061,8.5615": {
+    "nom": "Zürich, Ueberlandpark",
+    "distance_m": 180
+  },
+  "Zürich, Ueberlandpark||Zürich, ETH/Universitätsspital": {
+    "minutes": 13,
+    "changements": 0,
+    "resume": "T 9",
+    "depuis": "Zürich, Ueberlandpark",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Ueberlandpark||Zürich, ETH Hönggerberg": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "T 7 → B 69",
+    "depuis": "Zürich, Ueberlandpark",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4037,8.5582": {
+    "nom": "Zürich, Waldgarten",
+    "distance_m": 72
+  },
+  "Zürich, Waldgarten||Zürich, ETH/Universitätsspital": {
+    "minutes": 12,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Waldgarten",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Waldgarten||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 1,
+    "resume": "T 7 → B 69",
+    "depuis": "Zürich, Waldgarten",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3956,8.6161": {
+    "nom": "Dübendorf, Post",
+    "distance_m": 90
+  },
+  "Dübendorf, Post||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "B 752 → B 751 → T 6",
+    "depuis": "Dübendorf, Post",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Dübendorf, Post||Zürich, ETH Hönggerberg": {
+    "minutes": 37,
+    "changements": 2,
+    "resume": "B 752 → T 7 → B 69",
+    "depuis": "Dübendorf, Post",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.387,8.5399": {
+    "nom": "Zürich, Kronenstrasse",
+    "distance_m": 153
+  },
+  "Zürich, Kronenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 9,
+    "changements": 2,
+    "resume": "T 17 → T 7 → T 6",
+    "depuis": "Zürich, Kronenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Kronenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 12,
+    "changements": 1,
+    "resume": "T 17 → B 69",
+    "depuis": "Zürich, Kronenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3939,8.6109": {
+    "nom": "Dübendorf, Wasserfurren",
+    "distance_m": 26
+  },
+  "Dübendorf, Wasserfurren||Zürich, ETH/Universitätsspital": {
+    "minutes": 27,
+    "changements": 2,
+    "resume": "B 745 → S 9 → T 9",
+    "depuis": "Dübendorf, Wasserfurren",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Dübendorf, Wasserfurren||Zürich, ETH Hönggerberg": {
+    "minutes": 31,
+    "changements": 2,
+    "resume": "B 743 → T 7 → B 69",
+    "depuis": "Dübendorf, Wasserfurren",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4233,8.5422": {
+    "nom": "Zürich, Hertensteinstrasse",
+    "distance_m": 103
+  },
+  "Zürich, Hertensteinstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 25,
+    "changements": 2,
+    "resume": "B 40 → B 768 → T 10",
+    "depuis": "Zürich, Hertensteinstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Hertensteinstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 10,
+    "changements": 0,
+    "resume": "B 42",
+    "depuis": "Zürich, Hertensteinstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3549,8.5969": {
+    "nom": "Zürich, Wiesliacher",
+    "distance_m": 36
+  },
+  "Zürich, Wiesliacher||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "B 91 → B 31 → T 9",
+    "depuis": "Zürich, Wiesliacher",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Wiesliacher||Zürich, ETH Hönggerberg": {
+    "minutes": 45,
+    "changements": 3,
+    "resume": "B 91 → B 31 → T 7 → B E",
+    "depuis": "Zürich, Wiesliacher",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3989,8.5051": {
+    "nom": "Zürich, Schwert",
+    "distance_m": 95
+  },
+  "Zürich, Schwert||Zürich, ETH/Universitätsspital": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "B 46 → T 10",
+    "depuis": "Zürich, Schwert",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Schwert||Zürich, ETH Hönggerberg": {
+    "minutes": 4,
+    "changements": 1,
+    "resume": "B 46 → B 80",
+    "depuis": "Zürich, Schwert",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3883,8.539": {
+    "nom": "Zürich, Röslistrasse",
+    "distance_m": 123
+  },
+  "Zürich, Röslistrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 5,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Röslistrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Röslistrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "T 7 → B 69",
+    "depuis": "Zürich, Röslistrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3722,8.5162": {
+    "nom": "Zürich, Zwinglihaus",
+    "distance_m": 79
+  },
+  "Zürich, Zwinglihaus||Zürich, ETH/Universitätsspital": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "B 72 → T 14",
+    "depuis": "Zürich, Zwinglihaus",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Zwinglihaus||Zürich, ETH Hönggerberg": {
+    "minutes": 23,
+    "changements": 1,
+    "resume": "B 32 → B 69",
+    "depuis": "Zürich, Zwinglihaus",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.367,8.5679": {
+    "nom": "Zürich, Hölderlinsteig",
+    "distance_m": 219
+  },
+  "Zürich, Hölderlinsteig||Zürich, ETH/Universitätsspital": {
+    "minutes": 10,
+    "changements": 1,
+    "resume": "B 33 → T 6",
+    "depuis": "Zürich, Hölderlinsteig",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Hölderlinsteig||Zürich, ETH Hönggerberg": {
+    "minutes": 25,
+    "changements": 2,
+    "resume": "B 33 → T 17 → B 69",
+    "depuis": "Zürich, Hölderlinsteig",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.372,8.5183": {
+    "nom": "Zürich, Zwinglihaus",
+    "distance_m": 186
+  },
+  "stop@47.3162,8.5235": {
+    "nom": "Adliswil, Poststrasse",
+    "distance_m": 362
+  },
+  "Adliswil, Poststrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 37,
+    "changements": 2,
+    "resume": "B 184 → T 7 → T 6",
+    "depuis": "Adliswil, Poststrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Adliswil, Poststrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 48,
+    "changements": 2,
+    "resume": "B 184 → T 7 → B E",
+    "depuis": "Adliswil, Poststrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.373,8.5633": {
+    "nom": "Zürich, Hofstrasse",
+    "distance_m": 135
+  },
+  "Zürich, Hofstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 7,
+    "changements": 1,
+    "resume": "B 33 → T 6",
+    "depuis": "Zürich, Hofstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Hofstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 23,
+    "changements": 2,
+    "resume": "B 33 → T 17 → B 69",
+    "depuis": "Zürich, Hofstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4229,8.5147": {
+    "nom": "Zürich, Unteraffoltern",
+    "distance_m": 286
+  },
+  "Zürich, Unteraffoltern||Zürich, ETH/Universitätsspital": {
+    "minutes": 30,
+    "changements": 1,
+    "resume": "B 62 → T 10",
+    "depuis": "Zürich, Unteraffoltern",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Unteraffoltern||Zürich, ETH Hönggerberg": {
+    "minutes": 9,
+    "changements": 0,
+    "resume": "B 44",
+    "depuis": "Zürich, Unteraffoltern",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3676,8.5228": {
+    "nom": "Zürich, Manesseplatz",
+    "distance_m": 251
+  },
+  "Zürich, Manesseplatz||Zürich, ETH/Universitätsspital": {
+    "minutes": 20,
+    "changements": 1,
+    "resume": "B 76 → T 14",
+    "depuis": "Zürich, Manesseplatz",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Manesseplatz||Zürich, ETH Hönggerberg": {
+    "minutes": 28,
+    "changements": 1,
+    "resume": "B 72 → B 69",
+    "depuis": "Zürich, Manesseplatz",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3677,8.5226": {
+    "nom": "Zürich, Hertersteg",
+    "distance_m": 26
+  },
+  "Zürich, Hertersteg||Zürich, ETH/Universitätsspital": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "B 76 → T 14",
+    "depuis": "Zürich, Hertersteg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Hertersteg||Zürich, ETH Hönggerberg": {
+    "minutes": 27,
+    "changements": 1,
+    "resume": "B 72 → B 69",
+    "depuis": "Zürich, Hertersteg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3286,8.8104": {
+    "nom": "Wetzikon ZH, Friedhof",
+    "distance_m": 160
+  },
+  "Wetzikon ZH, Friedhof||Zürich, ETH/Universitätsspital": {
+    "minutes": 47,
+    "changements": 2,
+    "resume": "B 859 → S 15 → T 6",
+    "depuis": "Wetzikon ZH, Friedhof",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Wetzikon ZH, Friedhof||Zürich, ETH Hönggerberg": {
+    "minutes": 54,
+    "changements": 2,
+    "resume": "B 857 → S 14 → B 80",
+    "depuis": "Wetzikon ZH, Friedhof",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3808,8.5173": {
+    "nom": "Zürich, Güterbahnhof",
+    "distance_m": 209
+  },
+  "Zürich, Güterbahnhof||Zürich, ETH/Universitätsspital": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "B 31 → T 6",
+    "depuis": "Zürich, Güterbahnhof",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Güterbahnhof||Zürich, ETH Hönggerberg": {
+    "minutes": 20,
+    "changements": 2,
+    "resume": "T 8 → B 72 → B 69",
+    "depuis": "Zürich, Güterbahnhof",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3893,8.5131": {
+    "nom": "Zürich, Technopark",
+    "distance_m": 172
+  },
+  "Zürich, Technopark||Zürich, ETH/Universitätsspital": {
+    "minutes": 20,
+    "changements": 2,
+    "resume": "T 51 → B 46 → T 6",
+    "depuis": "Zürich, Technopark",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Technopark||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 2,
+    "resume": "T 51 → B 72 → B 69",
+    "depuis": "Zürich, Technopark",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3894,8.5132": {
+    "nom": "Zürich, Technopark",
+    "distance_m": 165
+  },
+  "stop@47.3697,8.5101": {
+    "nom": "Zürich, Talwiesenstrasse",
+    "distance_m": 43
+  },
+  "Zürich, Talwiesenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 18,
+    "changements": 0,
+    "resume": "T 14",
+    "depuis": "Zürich, Talwiesenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Talwiesenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 29,
+    "changements": 1,
+    "resume": "B 32 → B 69",
+    "depuis": "Zürich, Talwiesenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.36,8.5962": {
+    "nom": "Zürich, Loorenstrasse",
+    "distance_m": 129
+  },
+  "Zürich, Loorenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 1,
+    "resume": "B 31 → T 9",
+    "depuis": "Zürich, Loorenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Loorenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 33,
+    "changements": 3,
+    "resume": "B 704 → T 3 → T 7 → B E",
+    "depuis": "Zürich, Loorenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3404,8.5295": {
+    "nom": "Zürich, Butzenstrasse",
+    "distance_m": 125
+  },
+  "Zürich, Butzenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 23,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Butzenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Butzenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 32,
+    "changements": 1,
+    "resume": "T 7 → B E",
+    "depuis": "Zürich, Butzenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4013,8.4421": {
+    "nom": "Schlieren, Am Rietpark",
+    "distance_m": 107
+  },
+  "Schlieren, Am Rietpark||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "B 317 → S 11 → T 6",
+    "depuis": "Schlieren, Am Rietpark",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Schlieren, Am Rietpark||Zürich, ETH Hönggerberg": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "B 317 → S 11 → B 80",
+    "depuis": "Schlieren, Am Rietpark",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3893,8.5132": {
+    "nom": "Zürich, Technopark",
+    "distance_m": 166
+  },
+  "stop@47.3835,8.5398": {
+    "nom": "Zürich, Beckenhof",
+    "distance_m": 78
+  },
+  "Zürich, Beckenhof||Zürich, ETH/Universitätsspital": {
+    "minutes": 10,
+    "changements": 2,
+    "resume": "T 17 → T 7 → T 6",
+    "depuis": "Zürich, Beckenhof",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Beckenhof||Zürich, ETH Hönggerberg": {
+    "minutes": 14,
+    "changements": 1,
+    "resume": "T 17 → B 69",
+    "depuis": "Zürich, Beckenhof",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4336,8.5632": {
+    "nom": "Glattbrugg, Zentrum",
+    "distance_m": 194
+  },
+  "Glattbrugg, Zentrum||Zürich, ETH/Universitätsspital": {
+    "minutes": 29,
+    "changements": 1,
+    "resume": "B 768 → T 10",
+    "depuis": "Glattbrugg, Zentrum",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Glattbrugg, Zentrum||Zürich, ETH Hönggerberg": {
+    "minutes": 23,
+    "changements": 1,
+    "resume": "B 768 → B 42",
+    "depuis": "Glattbrugg, Zentrum",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4136,8.5882": {
+    "nom": "Wallisellen, Zentrum",
+    "distance_m": 209
+  },
+  "Wallisellen, Zentrum||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 1,
+    "resume": "S 19 → T 10",
+    "depuis": "Wallisellen, Zentrum",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Wallisellen, Zentrum||Zürich, ETH Hönggerberg": {
+    "minutes": 23,
+    "changements": 1,
+    "resume": "S 14 → B 80",
+    "depuis": "Wallisellen, Zentrum",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4335,8.5634": {
+    "nom": "Glattbrugg, Zentrum",
+    "distance_m": 181
+  },
+  "stop@47.3178,8.5226": {
+    "nom": "Sood-Oberleimbach",
+    "distance_m": 218
+  },
+  "Zürich, Sood-Oberleimbach||Zürich, ETH/Universitätsspital": {
+    "minutes": 31,
+    "changements": 1,
+    "resume": "S 4 → T 9",
+    "depuis": "Sood-Oberleimbach",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Sood-Oberleimbach||Zürich, ETH Hönggerberg": {
+    "minutes": 43,
+    "changements": 2,
+    "resume": "S 4 → B 72 → B 69",
+    "depuis": "Sood-Oberleimbach",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3405,8.5295": {
+    "nom": "Zürich, Butzenstrasse",
+    "distance_m": 123
+  },
+  "stop@47.3887,8.544": {
+    "nom": "Zürich, Scheuchzerstrasse",
+    "distance_m": 101
+  },
+  "Zürich, Scheuchzerstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 9,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Scheuchzerstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Scheuchzerstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 2,
+    "resume": "B 33 → T 17 → B 69",
+    "depuis": "Zürich, Scheuchzerstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3333,8.5355": {
+    "nom": "Zürich, Neubühl",
+    "distance_m": 57
+  },
+  "Zürich, Neubühl||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "B 66 → T 13 → T 10",
+    "depuis": "Zürich, Neubühl",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Neubühl||Zürich, ETH Hönggerberg": {
+    "minutes": 44,
+    "changements": 2,
+    "resume": "B 66 → T 7 → B E",
+    "depuis": "Zürich, Neubühl",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3794,8.5256": {
+    "nom": "Zürich, Militär-/Langstrasse",
+    "distance_m": 158
+  },
+  "stop@47.4152,8.5452": {
+    "nom": "Zürich, Felsenrainstrasse",
+    "distance_m": 171
+  },
+  "Zürich, Felsenrainstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 1,
+    "resume": "B 768 → T 10",
+    "depuis": "Zürich, Felsenrainstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Felsenrainstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 14,
+    "changements": 2,
+    "resume": "T 51 → B 75 → B 80",
+    "depuis": "Zürich, Felsenrainstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4062,8.5545": {
+    "nom": "Zürich, Friedackerstrasse",
+    "distance_m": 100
+  },
+  "Zürich, Friedackerstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "B 75 → T 9",
+    "depuis": "Zürich, Friedackerstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Friedackerstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "B 75 → B 80",
+    "depuis": "Zürich, Friedackerstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.359,8.5529": {
+    "nom": "Zürich, Höschgasse",
+    "distance_m": 150
+  },
+  "stop@47.3628,8.4937": {
+    "nom": "Zürich Triemli",
+    "distance_m": 278
+  },
+  "Zürich Triemli||Zürich, ETH/Universitätsspital": {
+    "minutes": 25,
+    "changements": 1,
+    "resume": "S 10 → T 9",
+    "depuis": "Zürich Triemli",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich Triemli||Zürich, ETH Hönggerberg": {
+    "minutes": 31,
+    "changements": 0,
+    "resume": "B 80",
+    "depuis": "Zürich Triemli",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3952,8.5216": {
+    "nom": "Zürich, Lehenstrasse",
+    "distance_m": 122
+  },
+  "Zürich, Lehenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 14,
+    "changements": 1,
+    "resume": "B 46 → T 10",
+    "depuis": "Zürich, Lehenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Lehenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 9,
+    "changements": 1,
+    "resume": "B 46 → B 80",
+    "depuis": "Zürich, Lehenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.5291,8.7513": {
+    "nom": "Reutlingen",
+    "distance_m": 91
+  },
+  "Zürich, Reutlingen||Zürich, ETH/Universitätsspital": {
+    "minutes": 47,
+    "changements": 2,
+    "resume": "S 29 → S 12 → T 9",
+    "depuis": "Reutlingen (Winterthur)",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Reutlingen||Zürich, ETH Hönggerberg": {
+    "minutes": 56,
+    "changements": 2,
+    "resume": "S 11 → S 8 → B 80",
+    "depuis": "Reutlingen (Winterthur)",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3896,8.4947": {
+    "nom": "Zürich, Letzibach",
+    "distance_m": 57
+  },
+  "Zürich, Letzibach||Zürich, ETH/Universitätsspital": {
+    "minutes": 25,
+    "changements": 1,
+    "resume": "B 31 → T 6",
+    "depuis": "Zürich, Letzibach",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Letzibach||Zürich, ETH Hönggerberg": {
+    "minutes": 14,
+    "changements": 1,
+    "resume": "B 83 → B 80",
+    "depuis": "Zürich, Letzibach",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4067,8.5476": {
+    "nom": "Zürich, Salersteig",
+    "distance_m": 97
+  },
+  "Zürich, Salersteig||Zürich, ETH/Universitätsspital": {
+    "minutes": 13,
+    "changements": 0,
+    "resume": "T 10",
+    "depuis": "Zürich, Salersteig",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Salersteig||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 2,
+    "resume": "T 10 → B 75 → B 80",
+    "depuis": "Zürich, Salersteig",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4018,8.506": {
+    "nom": "Zürich, Im Wingert",
+    "distance_m": 220
+  },
+  "Zürich, Im Wingert||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 1,
+    "resume": "B 69 → T 10",
+    "depuis": "Zürich, Im Wingert",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Im Wingert||Zürich, ETH Hönggerberg": {
+    "minutes": 2,
+    "changements": 0,
+    "resume": "B 69",
+    "depuis": "Zürich, Im Wingert",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4515,8.5897": {
+    "nom": "Kloten, Säntisstrasse",
+    "distance_m": 98
+  },
+  "Kloten, Säntisstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 36,
+    "changements": 2,
+    "resume": "B 733 → S 7 → T 10",
+    "depuis": "Kloten, Säntisstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Kloten, Säntisstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 34,
+    "changements": 2,
+    "resume": "B 733 → S 7 → B 80",
+    "depuis": "Kloten, Säntisstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3729,8.4907": {
+    "nom": "Zürich, Goldackerweg",
+    "distance_m": 234
+  },
+  "stop@47.4511,8.5915": {
+    "nom": "Kloten, Rankstrasse",
+    "distance_m": 42
+  },
+  "Kloten, Rankstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 36,
+    "changements": 2,
+    "resume": "B 765 → S 2 → T 10",
+    "depuis": "Kloten, Rankstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Kloten, Rankstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 33,
+    "changements": 2,
+    "resume": "B 765 → S 2 → B 80",
+    "depuis": "Kloten, Rankstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3897,8.494": {
+    "nom": "Zürich, Letzibach",
+    "distance_m": 86
+  },
+  "stop@47.4116,8.561": {
+    "nom": "Zürich, Saatlenstrasse",
+    "distance_m": 171
+  },
+  "Zürich, Saatlenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 2,
+    "resume": "B 62 → T 7 → T 6",
+    "depuis": "Zürich, Saatlenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Saatlenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 1,
+    "resume": "B 61 → B 80",
+    "depuis": "Zürich, Saatlenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3873,8.5149": {
+    "nom": "Zürich, Technopark",
+    "distance_m": 203
+  },
+  "stop@47.3941,8.5174": {
+    "nom": "Zürich, Waidfussweg",
+    "distance_m": 172
+  },
+  "Zürich, Waidfussweg||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 1,
+    "resume": "B 46 → T 10",
+    "depuis": "Zürich, Waidfussweg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Waidfussweg||Zürich, ETH Hönggerberg": {
+    "minutes": 8,
+    "changements": 1,
+    "resume": "T 50 → B 80",
+    "depuis": "Zürich, Waidfussweg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3064,8.553": {
+    "nom": "Rüschlikon, Weidstrasse",
+    "distance_m": 75
+  },
+  "Rüschlikon, Weidstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 34,
+    "changements": 1,
+    "resume": "B 165 → T 9",
+    "depuis": "Rüschlikon, Weidstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Rüschlikon, Weidstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 43,
+    "changements": 1,
+    "resume": "S 8 → B 80",
+    "depuis": "Rüschlikon, Weidstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4294,8.4743": {
+    "nom": "Regensdorf, Chrüzächer",
+    "distance_m": 200
+  },
+  "Regensdorf, Chrüzächer||Zürich, ETH/Universitätsspital": {
+    "minutes": 34,
+    "changements": 2,
+    "resume": "B 492 → B 62 → T 10",
+    "depuis": "Regensdorf, Chrüzächer",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Regensdorf, Chrüzächer||Zürich, ETH Hönggerberg": {
+    "minutes": 11,
+    "changements": 1,
+    "resume": "B 492 → B 44",
+    "depuis": "Regensdorf, Chrüzächer",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3953,8.5216": {
+    "nom": "Zürich, Lehenstrasse",
+    "distance_m": 118
+  },
+  "stop@47.3797,8.5267": {
+    "nom": "Zürich, Militär-/Langstrasse",
+    "distance_m": 72
+  },
+  "stop@47.4256,8.362": {
+    "nom": "Spreitenbach, Rotzenbühl",
+    "distance_m": 86
+  },
+  "Spreitenbach, Rotzenbühl||Zürich, ETH/Universitätsspital": {
+    "minutes": 41,
+    "changements": 2,
+    "resume": "B 2 → S 11 → T 6",
+    "depuis": "Spreitenbach, Rotzenbühl",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Spreitenbach, Rotzenbühl||Zürich, ETH Hönggerberg": {
+    "minutes": 38,
+    "changements": 2,
+    "resume": "B 2 → S 12 → B 80",
+    "depuis": "Spreitenbach, Rotzenbühl",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3518,8.5086": {
+    "nom": "Zürich, Albisgütli",
+    "distance_m": 73
+  },
+  "Zürich, Albisgütli||Zürich, ETH/Universitätsspital": {
+    "minutes": 26,
+    "changements": 1,
+    "resume": "T 13 → T 10",
+    "depuis": "Zürich, Albisgütli",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Albisgütli||Zürich, ETH Hönggerberg": {
+    "minutes": 35,
+    "changements": 2,
+    "resume": "T 13 → B 32 → B 69",
+    "depuis": "Zürich, Albisgütli",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4038,8.4892": {
+    "nom": "Zürich, Wartau",
+    "distance_m": 214
+  },
+  "Zürich, Wartau||Zürich, ETH/Universitätsspital": {
+    "minutes": 23,
+    "changements": 2,
+    "resume": "T 50 → B 46 → T 6",
+    "depuis": "Zürich, Wartau",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Wartau||Zürich, ETH Hönggerberg": {
+    "minutes": 6,
+    "changements": 0,
+    "resume": "B 80",
+    "depuis": "Zürich, Wartau",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3955,8.6161": {
+    "nom": "Dübendorf, Post",
+    "distance_m": 96
+  },
+  "stop@47.4044,8.4971": {
+    "nom": "Zürich, Wieslergasse",
+    "distance_m": 95
+  },
+  "Zürich, Wieslergasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 1,
+    "resume": "B 46 → T 10",
+    "depuis": "Zürich, Wieslergasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Wieslergasse||Zürich, ETH Hönggerberg": {
+    "minutes": 6,
+    "changements": 1,
+    "resume": "B 46 → B 80",
+    "depuis": "Zürich, Wieslergasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4384,8.4712": {
+    "nom": "Regensdorf, Althard/Bahnhof",
+    "distance_m": 81
+  },
+  "Regensdorf, Althard/Bahnhof||Zürich, ETH/Universitätsspital": {
+    "minutes": 33,
+    "changements": 1,
+    "resume": "S 21 → T 10",
+    "depuis": "Regensdorf, Althard/Bahnhof",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Regensdorf, Althard/Bahnhof||Zürich, ETH Hönggerberg": {
+    "minutes": 15,
+    "changements": 1,
+    "resume": "S 6 → B 37",
+    "depuis": "Regensdorf, Althard/Bahnhof",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3961,8.433": {
+    "nom": "Schlieren, Reitmen",
+    "distance_m": 111
+  },
+  "Schlieren, Reitmen||Zürich, ETH/Universitätsspital": {
+    "minutes": 37,
+    "changements": 2,
+    "resume": "T 20 → S 11 → T 6",
+    "depuis": "Schlieren, Reitmen",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Schlieren, Reitmen||Zürich, ETH Hönggerberg": {
+    "minutes": 28,
+    "changements": 1,
+    "resume": "T 20 → B 80",
+    "depuis": "Schlieren, Reitmen",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4056,8.4493": {
+    "nom": "Schlieren, Talacker-Windegg",
+    "distance_m": 113
+  },
+  "Schlieren, Talacker-Windegg||Zürich, ETH/Universitätsspital": {
+    "minutes": 34,
+    "changements": 2,
+    "resume": "B 302 → S 11 → T 6",
+    "depuis": "Schlieren, Talacker-Windegg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Schlieren, Talacker-Windegg||Zürich, ETH Hönggerberg": {
+    "minutes": 23,
+    "changements": 2,
+    "resume": "B 302 → B 89 → B 80",
+    "depuis": "Schlieren, Talacker-Windegg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4347,8.5671": {
+    "nom": "Glattbrugg, Glatthof",
+    "distance_m": 44
+  },
+  "Glattbrugg, Glatthof||Zürich, ETH/Universitätsspital": {
+    "minutes": 30,
+    "changements": 1,
+    "resume": "B 762 → T 10",
+    "depuis": "Glattbrugg, Glatthof",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Glattbrugg, Glatthof||Zürich, ETH Hönggerberg": {
+    "minutes": 26,
+    "changements": 1,
+    "resume": "B 768 → B 42",
+    "depuis": "Glattbrugg, Glatthof",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3628,8.4936": {
+    "nom": "Zürich Triemli",
+    "distance_m": 276
+  },
+  "stop@47.4233,8.5423": {
+    "nom": "Zürich, Hertensteinstrasse",
+    "distance_m": 103
+  },
+  "stop@47.3725,8.5014": {
+    "nom": "Zürich, Langgrütstrasse",
+    "distance_m": 137
+  },
+  "Zürich, Langgrütstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 22,
+    "changements": 1,
+    "resume": "B 67 → T 14",
+    "depuis": "Zürich, Langgrütstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Langgrütstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 23,
+    "changements": 1,
+    "resume": "B 67 → B 80",
+    "depuis": "Zürich, Langgrütstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4243,8.5365": {
+    "nom": "Zürich, Schönauring",
+    "distance_m": 198
+  },
+  "Zürich, Schönauring||Zürich, ETH/Universitätsspital": {
+    "minutes": 30,
+    "changements": 1,
+    "resume": "B 75 → T 10",
+    "depuis": "Zürich, Schönauring",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Schönauring||Zürich, ETH Hönggerberg": {
+    "minutes": 16,
+    "changements": 1,
+    "resume": "B 75 → B 80",
+    "depuis": "Zürich, Schönauring",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4161,8.5852": {
+    "nom": "Wallisellen, Kaserne",
+    "distance_m": 92
+  },
+  "Wallisellen, Kaserne||Zürich, ETH/Universitätsspital": {
+    "minutes": 32,
+    "changements": 2,
+    "resume": "B 761 → S 8 → T 6",
+    "depuis": "Wallisellen, Kaserne",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Wallisellen, Kaserne||Zürich, ETH Hönggerberg": {
+    "minutes": 27,
+    "changements": 2,
+    "resume": "B 761 → S 8 → B 80",
+    "depuis": "Wallisellen, Kaserne",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3899,8.4835": {
+    "nom": "Zürich, Bachmattstrasse",
+    "distance_m": 115
+  },
+  "Zürich, Bachmattstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 26,
+    "changements": 3,
+    "resume": "T 2 → B 80 → S 19 → T 6",
+    "depuis": "Zürich, Bachmattstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Bachmattstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "T 2 → B 80",
+    "depuis": "Zürich, Bachmattstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3708,8.5508": {
+    "nom": "Zürich, Kunsthaus",
+    "distance_m": 129
+  },
+  "Zürich, Kunsthaus||Zürich, ETH/Universitätsspital": {
+    "minutes": 3,
+    "changements": 0,
+    "resume": "T 9",
+    "depuis": "Zürich, Kunsthaus",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Kunsthaus||Zürich, ETH Hönggerberg": {
+    "minutes": 20,
+    "changements": 1,
+    "resume": "T 9 → B E",
+    "depuis": "Zürich, Kunsthaus",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4038,8.4048": {
+    "nom": "Dietikon, Bahnhofstrasse",
+    "distance_m": 98
+  },
+  "Dietikon, Bahnhofstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 29,
+    "changements": 1,
+    "resume": "S 19 → T 6",
+    "depuis": "Dietikon, Bahnhofstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Dietikon, Bahnhofstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 26,
+    "changements": 1,
+    "resume": "S 19 → B 80",
+    "depuis": "Dietikon, Bahnhofstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.5234,8.7532": {
+    "nom": "Winterthur, Oberwinterthur",
+    "distance_m": 439
+  },
+  "Winterthur, Oberwinterthur||Zürich, ETH/Universitätsspital": {
+    "minutes": 45,
+    "changements": 3,
+    "resume": "B 1 → S 29 → S 12 → T 9",
+    "depuis": "Winterthur, Oberwinterthur",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Winterthur, Oberwinterthur||Zürich, ETH Hönggerberg": {
+    "minutes": 55,
+    "changements": 3,
+    "resume": "B 1 → S 11 → S 8 → B 80",
+    "depuis": "Winterthur, Oberwinterthur",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3678,8.5546": {
+    "nom": "Zürich, Sprecherstrasse",
+    "distance_m": 179
+  },
+  "Zürich, Sprecherstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 7,
+    "changements": 1,
+    "resume": "B 31 → T 9",
+    "depuis": "Zürich, Sprecherstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Sprecherstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 22,
+    "changements": 2,
+    "resume": "B 31 → T 10 → B E",
+    "depuis": "Zürich, Sprecherstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.399,8.63": {
+    "nom": "Dübendorf, Glärnischstrasse",
+    "distance_m": 313
+  },
+  "Dübendorf, Glärnischstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 30,
+    "changements": 2,
+    "resume": "B 756 → S 9 → T 9",
+    "depuis": "Dübendorf, Glärnischstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Dübendorf, Glärnischstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 30,
+    "changements": 2,
+    "resume": "B 756 → S 14 → B 80",
+    "depuis": "Dübendorf, Glärnischstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3775,8.5257": {
+    "nom": "Zürich, Helvetiaplatz",
+    "distance_m": 132
+  },
+  "Zürich, Helvetiaplatz||Zürich, ETH/Universitätsspital": {
+    "minutes": 19,
+    "changements": 0,
+    "resume": "T 14",
+    "depuis": "Zürich, Helvetiaplatz",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Helvetiaplatz||Zürich, ETH Hönggerberg": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "B 32 → B 69",
+    "depuis": "Zürich, Helvetiaplatz",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4432,8.5887": {
+    "nom": "Kloten, Wallisellenstrasse",
+    "distance_m": 136
+  },
+  "Kloten, Wallisellenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 36,
+    "changements": 2,
+    "resume": "B 731 → S 7 → T 10",
+    "depuis": "Kloten, Wallisellenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Kloten, Wallisellenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 34,
+    "changements": 2,
+    "resume": "B 731 → S 7 → B 80",
+    "depuis": "Kloten, Wallisellenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3741,8.5397": {
+    "nom": "Zürich, Rennweg",
+    "distance_m": 146
+  },
+  "Zürich, Rennweg||Zürich, ETH/Universitätsspital": {
+    "minutes": 8,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Rennweg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Rennweg||Zürich, ETH Hönggerberg": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "T 7 → B E",
+    "depuis": "Zürich, Rennweg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3741,8.5396": {
+    "nom": "Zürich, Rennweg",
+    "distance_m": 148
+  },
+  "stop@47.3412,8.5844": {
+    "nom": "Zollikon, Allmend",
+    "distance_m": 222
+  },
+  "Zollikon, Allmend||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "B 910 → B 916 → T 9",
+    "depuis": "Zollikon, Allmend",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zollikon, Allmend||Zürich, ETH Hönggerberg": {
+    "minutes": 47,
+    "changements": 2,
+    "resume": "B 910 → S 16 → B 80",
+    "depuis": "Zollikon, Allmend",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3742,8.5397": {
+    "nom": "Zürich, Rennweg",
+    "distance_m": 158
+  },
+  "stop@47.3817,8.5334": {
+    "nom": "Zürich, Museum für Gestaltung",
+    "distance_m": 128
+  },
+  "stop@47.4455,8.5894": {
+    "nom": "Kloten, Schulstrasse",
+    "distance_m": 138
+  },
+  "Kloten, Schulstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 35,
+    "changements": 2,
+    "resume": "B 731 → S 7 → T 10",
+    "depuis": "Kloten, Schulstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Kloten, Schulstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 33,
+    "changements": 2,
+    "resume": "B 731 → S 7 → B 80",
+    "depuis": "Kloten, Schulstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3699,8.4967": {
+    "nom": "Zürich, Triemli",
+    "distance_m": 223
+  },
+  "Zürich, Triemli||Zürich, ETH/Universitätsspital": {
+    "minutes": 22,
+    "changements": 0,
+    "resume": "T 14",
+    "depuis": "Zürich, Triemli",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Triemli||Zürich, ETH Hönggerberg": {
+    "minutes": 24,
+    "changements": 0,
+    "resume": "B 80",
+    "depuis": "Zürich, Triemli",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3728,8.5231": {
+    "nom": "Zürich Wiedikon",
+    "distance_m": 148
+  },
+  "Zürich Wiedikon||Zürich, ETH/Universitätsspital": {
+    "minutes": 13,
+    "changements": 0,
+    "resume": "T 14",
+    "depuis": "Zürich Wiedikon, Bahnhof",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich Wiedikon||Zürich, ETH Hönggerberg": {
+    "minutes": 26,
+    "changements": 1,
+    "resume": "S 8 → B 80",
+    "depuis": "Zürich Wiedikon",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3204,8.5787": {
+    "nom": "Küsnacht ZH (See)",
+    "distance_m": 160
+  },
+  "Zürich, Küsnacht ZH (See)||Zürich, ETH/Universitätsspital": {
+    "minutes": 24,
+    "changements": 1,
+    "resume": "S 20 → T 9",
+    "depuis": "Küsnacht, Seestr.",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Küsnacht ZH (See)||Zürich, ETH Hönggerberg": {
+    "minutes": 37,
+    "changements": 3,
+    "resume": "S 20 → B 33 → B 46 → B 80",
+    "depuis": "Küsnacht, Seestr.",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.39,8.5376": {
+    "nom": "Zürich, Rotbuchstrasse",
+    "distance_m": 183
+  },
+  "Zürich, Rotbuchstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 13,
+    "changements": 1,
+    "resume": "B 33 → T 10",
+    "depuis": "Zürich, Rotbuchstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Rotbuchstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 11,
+    "changements": 1,
+    "resume": "B 32 → B 69",
+    "depuis": "Zürich, Rotbuchstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3722,8.5163": {
+    "nom": "Zürich, Zwinglihaus",
+    "distance_m": 78
+  },
+  "stop@47.3404,8.5294": {
+    "nom": "Zürich, Butzenstrasse",
+    "distance_m": 134
+  },
+  "stop@47.3847,8.5496": {
+    "nom": "Zürich, Vogelsangstrasse",
+    "distance_m": 131
+  },
+  "Zürich, Vogelsangstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 4,
+    "changements": 0,
+    "resume": "T 10",
+    "depuis": "Zürich, Vogelsangstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Vogelsangstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 18,
+    "changements": 1,
+    "resume": "T 10 → B E",
+    "depuis": "Zürich, Vogelsangstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3814,8.5173": {
+    "nom": "Zürich, Güterbahnhof",
+    "distance_m": 232
+  },
+  "stop@47.4166,8.5981": {
+    "nom": "Wallisellen, Haldenstrasse",
+    "distance_m": 160
+  },
+  "Wallisellen, Haldenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 32,
+    "changements": 1,
+    "resume": "S 19 → T 10",
+    "depuis": "Wallisellen, Haldenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Wallisellen, Haldenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 26,
+    "changements": 2,
+    "resume": "B 774 → S 14 → B 80",
+    "depuis": "Wallisellen, Haldenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3519,8.5086": {
+    "nom": "Zürich, Albisgütli",
+    "distance_m": 67
+  },
+  "stop@47.4123,8.5572": {
+    "nom": "Zürich, Hallenbad Oerlikon",
+    "distance_m": 200
+  },
+  "Zürich, Hallenbad Oerlikon||Zürich, ETH/Universitätsspital": {
+    "minutes": 19,
+    "changements": 1,
+    "resume": "B 62 → T 10",
+    "depuis": "Zürich, Hallenbad Oerlikon",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Hallenbad Oerlikon||Zürich, ETH Hönggerberg": {
+    "minutes": 14,
+    "changements": 1,
+    "resume": "B 61 → B 80",
+    "depuis": "Zürich, Hallenbad Oerlikon",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4035,8.6031": {
+    "nom": "Dübendorf, Neugut Süd",
+    "distance_m": 148
+  },
+  "Dübendorf, Neugut Süd||Zürich, ETH/Universitätsspital": {
+    "minutes": 29,
+    "changements": 2,
+    "resume": "B 760 → S 3 → T 9",
+    "depuis": "Dübendorf, Neugut Süd",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Dübendorf, Neugut Süd||Zürich, ETH Hönggerberg": {
+    "minutes": 32,
+    "changements": 2,
+    "resume": "B 759 → S 14 → B 80",
+    "depuis": "Dübendorf, Neugut Süd",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4021,8.3967": {
+    "nom": "Dietikon, Oberdorf",
+    "distance_m": 45
+  },
+  "Dietikon, Oberdorf||Zürich, ETH/Universitätsspital": {
+    "minutes": 32,
+    "changements": 2,
+    "resume": "B 306 → S 19 → T 6",
+    "depuis": "Dietikon, Oberdorf",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Dietikon, Oberdorf||Zürich, ETH Hönggerberg": {
+    "minutes": 29,
+    "changements": 2,
+    "resume": "B 306 → S 19 → B 80",
+    "depuis": "Dietikon, Oberdorf",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3601,8.5293": {
+    "nom": "Zürich, Museum Rietberg",
+    "distance_m": 184
+  },
+  "Zürich, Museum Rietberg||Zürich, ETH/Universitätsspital": {
+    "minutes": 16,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Museum Rietberg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Museum Rietberg||Zürich, ETH Hönggerberg": {
+    "minutes": 27,
+    "changements": 1,
+    "resume": "T 7 → B E",
+    "depuis": "Zürich, Museum Rietberg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4245,8.5419": {
+    "nom": "Zürich, Hertensteinstrasse",
+    "distance_m": 218
+  },
+  "stop@47.3886,8.4317": {
+    "nom": "Urdorf, Bahnhof-/Bergstrasse",
+    "distance_m": 143
+  },
+  "Urdorf, Bahnhof-/Bergstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 1,
+    "resume": "S 5 → T 6",
+    "depuis": "Urdorf, Bahnhof-/Bergstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Urdorf, Bahnhof-/Bergstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 24,
+    "changements": 1,
+    "resume": "S 5 → B 80",
+    "depuis": "Urdorf, Bahnhof-/Bergstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3982,8.5469": {
+    "nom": "Zürich, Universität Irchel",
+    "distance_m": 280
+  },
+  "Zürich, Universität Irchel||Zürich, ETH/Universitätsspital": {
+    "minutes": 7,
+    "changements": 0,
+    "resume": "T 9",
+    "depuis": "Zürich, Universität Irchel",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Universität Irchel||Zürich, ETH Hönggerberg": {
+    "minutes": 15,
+    "changements": 0,
+    "resume": "B 69",
+    "depuis": "Zürich, Universität Irchel",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4048,8.5711": {
+    "nom": "Zürich, Schwamendingerplatz",
+    "distance_m": 48
+  },
+  "Zürich, Schwamendingerplatz||Zürich, ETH/Universitätsspital": {
+    "minutes": 15,
+    "changements": 0,
+    "resume": "T 9",
+    "depuis": "Zürich, Schwamendingerplatz",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Schwamendingerplatz||Zürich, ETH Hönggerberg": {
+    "minutes": 19,
+    "changements": 1,
+    "resume": "T 7 → B 69",
+    "depuis": "Zürich, Schwamendingerplatz",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4135,8.5583": {
+    "nom": "Zürich, Riedbach",
+    "distance_m": 108
+  },
+  "Zürich, Riedbach||Zürich, ETH/Universitätsspital": {
+    "minutes": 24,
+    "changements": 1,
+    "resume": "B 787 → T 10",
+    "depuis": "Zürich, Riedbach",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Riedbach||Zürich, ETH Hönggerberg": {
+    "minutes": 17,
+    "changements": 2,
+    "resume": "B 781 → B 75 → B 80",
+    "depuis": "Zürich, Riedbach",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.509,8.7569": {
+    "nom": "Winterthur, Im Geissacker",
+    "distance_m": 222
+  },
+  "Winterthur, Im Geissacker||Zürich, ETH/Universitätsspital": {
+    "minutes": 46,
+    "changements": 2,
+    "resume": "S 29 → S 12 → T 9",
+    "depuis": "Winterthur, Im Geissacker",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Winterthur, Im Geissacker||Zürich, ETH Hönggerberg": {
+    "minutes": 57,
+    "changements": 2,
+    "resume": "B 10 → S 8 → B 80",
+    "depuis": "Winterthur, Im Geissacker",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.345,8.5324": {
+    "nom": "Zürich, Renggerstrasse",
+    "distance_m": 79
+  },
+  "Zürich, Renggerstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Renggerstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Renggerstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 30,
+    "changements": 1,
+    "resume": "T 7 → B E",
+    "depuis": "Zürich, Renggerstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3698,8.5549": {
+    "nom": "Zürich, Hottingerplatz",
+    "distance_m": 49
+  },
+  "Zürich, Hottingerplatz||Zürich, ETH/Universitätsspital": {
+    "minutes": 9,
+    "changements": 0,
+    "resume": "T 9",
+    "depuis": "Zürich, Hottingerplatz",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Hottingerplatz||Zürich, ETH Hönggerberg": {
+    "minutes": 20,
+    "changements": 2,
+    "resume": "T 3 → T 7 → B E",
+    "depuis": "Zürich, Hottingerplatz",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3955,8.6162": {
+    "nom": "Dübendorf, Post",
+    "distance_m": 90
+  },
+  "stop@47.4123,8.5573": {
+    "nom": "Zürich, Riedgraben",
+    "distance_m": 206
+  },
+  "Zürich, Riedgraben||Zürich, ETH/Universitätsspital": {
+    "minutes": 20,
+    "changements": 1,
+    "resume": "B 61 → T 10",
+    "depuis": "Zürich, Riedgraben",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Riedgraben||Zürich, ETH Hönggerberg": {
+    "minutes": 15,
+    "changements": 1,
+    "resume": "B 61 → B 80",
+    "depuis": "Zürich, Riedgraben",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3991,8.5532": {
+    "nom": "Zürich, Tierspital",
+    "distance_m": 330
+  },
+  "Zürich, Tierspital||Zürich, ETH/Universitätsspital": {
+    "minutes": 11,
+    "changements": 1,
+    "resume": "T 7 → T 6",
+    "depuis": "Zürich, Tierspital",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Tierspital||Zürich, ETH Hönggerberg": {
+    "minutes": 15,
+    "changements": 1,
+    "resume": "T 7 → B 69",
+    "depuis": "Zürich, Tierspital",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3995,8.4818": {
+    "nom": "Zürich, Werdhölzli",
+    "distance_m": 182
+  },
+  "Zürich, Werdhölzli||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "B 307 → S 19 → T 6",
+    "depuis": "Zürich, Werdhölzli",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Werdhölzli||Zürich, ETH Hönggerberg": {
+    "minutes": 14,
+    "changements": 1,
+    "resume": "T 17 → B 80",
+    "depuis": "Zürich, Werdhölzli",
+    "vers": "Zürich, ETH Hönggerberg"
+  }
+}
