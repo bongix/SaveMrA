@@ -212,8 +212,10 @@ input[type=range]{padding:0;accent-color:var(--accent);width:112px}
 .lieu b{color:var(--ink);font-weight:500}
 .puces{display:flex;flex-wrap:wrap;gap:5px;list-style:none;margin:0 0 6px;padding:0}
 .puces li{font-size:11.5px;background:var(--surface2);border-radius:2px;padding:1px 7px;color:var(--ink2)}
-.puce-meuble{color:#fff;background:var(--c);font-weight:500}
-.puce-meuble--flou{background:transparent;color:var(--c);border:1px dashed currentColor}
+/* .puces li vaut (0,1,1) : une simple classe se ferait écraser. */
+.puces li.puce-meuble{color:#fff;background:var(--c);font-weight:500}
+.puces li.puce-meuble--flou{background:transparent;color:var(--c);
+  border:1px dashed currentColor}
 .ameub{margin:5px 0 0;font-size:12.5px;color:var(--ink2);font-style:italic}
 .dispo{margin:0;font-size:12.5px;color:var(--ink2)}
 .dispo--ideal,.dispo--immediat{color:#12805C}
