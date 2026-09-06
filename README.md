@@ -13,6 +13,10 @@ Trois questions structurent l'outil, dans cet ordre :
 3. **Est-ce lisible ?** — chaque annonce est étiquetée par langue et accompagnée
    d'un résumé en français.
 
+Les colocations **réservées aux femmes** sont retirées automatiquement ; celles
+qui expriment une simple préférence sont conservées et signalées. Voir
+`docs/BRIEF.md`.
+
 **Page publique, à donner à MrA** : https://bongix.github.io/SaveMrA/
 (miroir privé : https://claude.ai/code/artifact/87d7dd30-51ad-4755-9d0f-c688f62ca9bf)
 
@@ -51,11 +55,13 @@ data/campus.json       les deux campus ETH — change ici le campus de référen
 data/tranches.json     les seuils des tranches de trajet
 data/annonces.json     le jeu de données enrichi (sortie du pipeline)
 data/cache_trajets.json cache des itinéraires, supprimable sans risque
+data/exclues_genre.json registre des annonces réservées aux femmes, retirées
 
 scripts/collecte_flatfox.py  collecteur Flatfox
 scripts/commute.py           itinéraires réels via transport.opendata.ch
 scripts/veracite.py          scoring anti-arnaque
 scripts/langue.py            détection de langue
+scripts/exclusions.py        retrait des annonces réservées aux femmes
 scripts/pipeline.py          orchestration
 scripts/dashboard.py         génération du tableau de bord
 scripts/publier.sh           collecte + page + push GitHub Pages, en une commande

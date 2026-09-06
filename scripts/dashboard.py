@@ -68,6 +68,7 @@ def carte(a):
     <ul class="puces">{''.join(f'<li>{e(p)}</li>' for p in puces)}</ul>
     <p class="dispo dispo--{e(d.get('code','inconnu'))}">{e(d.get('label'))} — {e(d.get('detail'))}</p>
     {'<p class="alerte">⚠ ' + ' · '.join(e(x) for x in alerte) + '</p>' if alerte else ''}
+    {'<p class="genre">Préférence féminine annoncée — ' + ' · '.join(e(m) for m in (a.get('genre') or {}).get('motifs', [])) + '. Candidature possible, mais les chances sont faibles.</p>' if (a.get('genre') or {}).get('niveau') == 'preference' else ''}
     <details class="pourquoi">
       <summary>Pourquoi ce score</summary>
       <div class="pourquoi__grille">
@@ -165,6 +166,7 @@ a{color:var(--accent)}
   :root:not([data-theme="light"]) .dispo--ideal,
   :root:not([data-theme="light"]) .dispo--immediat{color:#5FBF9B}
   :root:not([data-theme="light"]) .alerte{color:#F08A8A}
+  :root:not([data-theme="light"]) .genre{color:#E0B057}
 }
 .bouton:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 select,input[type=range]{font:inherit;font-size:13px;color:var(--ink);
@@ -209,6 +211,9 @@ input[type=range]{padding:0;accent-color:var(--accent);width:112px}
 :root[data-theme="dark"] .dispo--ideal,:root[data-theme="dark"] .dispo--immediat{color:#5FBF9B}
 .dispo--tardif,.dispo--hors_periode{color:#B5560F}
 .alerte{margin:6px 0 0;font-size:12.5px;font-weight:600;color:#A11D1D}
+.genre{margin:6px 0 0;font-size:12.5px;color:#8A5A12;background:var(--surface2);
+  border-left:3px solid #C9962B;padding:4px 9px;border-radius:0 2px 2px 0}
+:root[data-theme="dark"] .genre{color:#E0B057}
 :root[data-theme="dark"] .alerte{color:#F08A8A}
 .pourquoi{margin-top:7px}
 .pourquoi summary{font-size:12px;color:var(--accent);cursor:pointer;width:max-content}
@@ -304,6 +309,10 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     Il signale où regarder, il ne remplace pas une visite.</p>
     <p><b>Aucun paiement avant d'avoir vu le logement.</b> C'est la seule règle qui
     protège vraiment.</p>
+    <p>Les annonces <b>réservées aux femmes</b> sont retirées automatiquement de
+    cette page ($retirees écartées à la dernière collecte). Celles qui expriment une
+    simple préférence sont conservées et signalées en orange : le choix revient
+    à qui postule, pas à l'outil.</p>
     <h3>Le reste du dossier</h3>
     <p><a href="https://github.com/bongix/SaveMrA/blob/main/docs/CANDIDATURE.md">Le message à envoyer et le dossier à préparer</a> ·
     <a href="https://github.com/bongix/SaveMrA/blob/main/docs/GLOSSAIRE.md">Décoder une annonce en allemand</a> ·
@@ -427,6 +436,7 @@ def construire():
         sections=sections,
         boutons_prix=boutons_prix,
         plafond=d.get("loyer_max_chf", "—"),
+        retirees=d.get("retirees_genre", 0),
     )
 
 

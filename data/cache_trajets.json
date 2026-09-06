@@ -1844,5 +1844,467 @@
     "resume": "T 17 → B 80",
     "depuis": "Zürich, Werdhölzli",
     "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3911,8.6757": {
+    "nom": "Volketswil, Chappeli",
+    "distance_m": 190
+  },
+  "Volketswil, Chappeli||Zürich, ETH/Universitätsspital": {
+    "minutes": 37,
+    "changements": 2,
+    "resume": "B 725 → S 9 → T 9",
+    "depuis": "Volketswil, Chappeli",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Volketswil, Chappeli||Zürich, ETH Hönggerberg": {
+    "minutes": 37,
+    "changements": 2,
+    "resume": "B 725 → S 14 → B 80",
+    "depuis": "Volketswil, Chappeli",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3983,8.5469": {
+    "nom": "Zürich, Universität Irchel",
+    "distance_m": 285
+  },
+  "stop@47.367,8.5117": {
+    "nom": "Zürich, Höfliweg",
+    "distance_m": 87
+  },
+  "Zürich, Höfliweg||Zürich, ETH/Universitätsspital": {
+    "minutes": 21,
+    "changements": 1,
+    "resume": "B 32 → T 14",
+    "depuis": "Zürich, Höfliweg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Höfliweg||Zürich, ETH Hönggerberg": {
+    "minutes": 25,
+    "changements": 1,
+    "resume": "B 32 → B 69",
+    "depuis": "Zürich, Höfliweg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4161,8.5384": {
+    "nom": "Zürich, Neunbrunnen",
+    "distance_m": 70
+  },
+  "Zürich, Neunbrunnen||Zürich, ETH/Universitätsspital": {
+    "minutes": 26,
+    "changements": 1,
+    "resume": "B 75 → T 10",
+    "depuis": "Zürich, Neunbrunnen",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Neunbrunnen||Zürich, ETH Hönggerberg": {
+    "minutes": 12,
+    "changements": 1,
+    "resume": "B 75 → B 80",
+    "depuis": "Zürich, Neunbrunnen",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3317,8.6054": {
+    "nom": "Itschnach, Fallacher",
+    "distance_m": 302
+  },
+  "Itschnach, Fallacher||Zürich, ETH/Universitätsspital": {
+    "minutes": 34,
+    "changements": 1,
+    "resume": "B 912 → T 9",
+    "depuis": "Itschnach, Fallacher",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Itschnach, Fallacher||Zürich, ETH Hönggerberg": {
+    "minutes": 43,
+    "changements": 4,
+    "resume": "B 919 → S 20 → B 33 → B 46 → B 80",
+    "depuis": "Itschnach, Fallacher",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3886,8.544": {
+    "nom": "Zürich, Scheuchzerstrasse",
+    "distance_m": 92
+  },
+  "stop@47.3597,8.5688": {
+    "nom": "Zürich, Wetlistrasse",
+    "distance_m": 58
+  },
+  "Zürich, Wetlistrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 14,
+    "changements": 1,
+    "resume": "T 4 → T 9",
+    "depuis": "Zürich, Wetlistrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Wetlistrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "T 4 → T 7 → B E",
+    "depuis": "Zürich, Wetlistrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4091,8.5737": {
+    "nom": "Zürich, Herzogenmühlestrasse",
+    "distance_m": 193
+  },
+  "Zürich, Herzogenmühlestrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 17,
+    "changements": 1,
+    "resume": "B 62 → T 9",
+    "depuis": "Zürich, Herzogenmühlestrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Herzogenmühlestrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 22,
+    "changements": 2,
+    "resume": "B 75 → B 62 → B 80",
+    "depuis": "Zürich, Herzogenmühlestrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3984,8.4466": {
+    "nom": "Schlieren",
+    "distance_m": 103
+  },
+  "Zürich, Schlieren||Zürich, ETH/Universitätsspital": {
+    "minutes": 44,
+    "changements": 2,
+    "resume": "B 302 → S 11 → T 6",
+    "depuis": "Schlieren ZH, Alter Zürichweg",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Schlieren||Zürich, ETH Hönggerberg": {
+    "minutes": 38,
+    "changements": 1,
+    "resume": "T 20 → B 80",
+    "depuis": "Schlieren ZH, Alter Zürichweg",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4031,8.6043": {
+    "nom": "Wallisellen, Neugut",
+    "distance_m": 189
+  },
+  "Wallisellen, Neugut||Zürich, ETH/Universitätsspital": {
+    "minutes": 29,
+    "changements": 2,
+    "resume": "T 12 → T 7 → T 6",
+    "depuis": "Wallisellen, Neugut",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Wallisellen, Neugut||Zürich, ETH Hönggerberg": {
+    "minutes": 28,
+    "changements": 2,
+    "resume": "T 12 → S 19 → B 80",
+    "depuis": "Wallisellen, Neugut",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3175,8.5846": {
+    "nom": "Küsnacht ZH, Ob. Heslibachstr.",
+    "distance_m": 99
+  },
+  "Küsnacht ZH, Ob. Heslibachstr.||Zürich, ETH/Universitätsspital": {
+    "minutes": 27,
+    "changements": 1,
+    "resume": "S 20 → T 9",
+    "depuis": "Küsnacht ZH, Ob. Heslibachstr.",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Küsnacht ZH, Ob. Heslibachstr.||Zürich, ETH Hönggerberg": {
+    "minutes": 40,
+    "changements": 3,
+    "resume": "S 20 → B 33 → B 46 → B 80",
+    "depuis": "Küsnacht ZH, Ob. Heslibachstr.",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.5064,8.7641": {
+    "nom": "Winterthur, Grubenstr.",
+    "distance_m": 129
+  },
+  "Winterthur, Grubenstr.||Zürich, ETH/Universitätsspital": {
+    "minutes": 46,
+    "changements": 2,
+    "resume": "B 680 → S 12 → T 9",
+    "depuis": "Winterthur, Grubenstr.",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Winterthur, Grubenstr.||Zürich, ETH Hönggerberg": {
+    "minutes": 53,
+    "changements": 2,
+    "resume": "S 11 → S 8 → B 80",
+    "depuis": "Winterthur, Grubenstr.",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3674,8.562": {
+    "nom": "Zürich, Hölderlinstrasse",
+    "distance_m": 141
+  },
+  "Zürich, Hölderlinstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 13,
+    "changements": 1,
+    "resume": "T 3 → T 9",
+    "depuis": "Zürich, Hölderlinstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Hölderlinstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 22,
+    "changements": 2,
+    "resume": "T 3 → T 7 → B E",
+    "depuis": "Zürich, Hölderlinstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4356,8.5651": {
+    "nom": "Glattbrugg, Glatthof",
+    "distance_m": 223
+  },
+  "stop@47.4144,8.5597": {
+    "nom": "Zürich, Riedbach",
+    "distance_m": 117
+  },
+  "stop@47.3184,8.5928": {
+    "nom": "Küsnacht ZH, Hesligenstrasse",
+    "distance_m": 297
+  },
+  "Küsnacht ZH, Hesligenstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 34,
+    "changements": 1,
+    "resume": "B 916 → T 9",
+    "depuis": "Küsnacht ZH, Hesligenstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Küsnacht ZH, Hesligenstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 47,
+    "changements": 3,
+    "resume": "S 20 → B 33 → B 46 → B 80",
+    "depuis": "Küsnacht ZH, Hesligenstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3808,8.5172": {
+    "nom": "Zürich, Güterbahnhof",
+    "distance_m": 212
+  },
+  "stop@47.322,8.5452": {
+    "nom": "Kilchberg ZH, Schwelle",
+    "distance_m": 35
+  },
+  "Kilchberg ZH, Schwelle||Zürich, ETH/Universitätsspital": {
+    "minutes": 30,
+    "changements": 1,
+    "resume": "B 161 → T 9",
+    "depuis": "Kilchberg ZH, Schwelle",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Kilchberg ZH, Schwelle||Zürich, ETH Hönggerberg": {
+    "minutes": 46,
+    "changements": 2,
+    "resume": "S 24 → S 2 → B 80",
+    "depuis": "Kilchberg ZH, Schwelle",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3861,8.4794": {
+    "nom": "Zürich, Schulhaus Buchlern",
+    "distance_m": 168
+  },
+  "Zürich, Schulhaus Buchlern||Zürich, ETH/Universitätsspital": {
+    "minutes": 28,
+    "changements": 3,
+    "resume": "B 67 → B 80 → S 19 → T 6",
+    "depuis": "Zürich, Schulhaus Buchlern",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Schulhaus Buchlern||Zürich, ETH Hönggerberg": {
+    "minutes": 19,
+    "changements": 1,
+    "resume": "B 67 → B 80",
+    "depuis": "Zürich, Schulhaus Buchlern",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3984,8.4465": {
+    "nom": "Schlieren",
+    "distance_m": 106
+  },
+  "stop@47.3677,8.5219": {
+    "nom": "Zürich, Hertersteg",
+    "distance_m": 82
+  },
+  "stop@47.5161,8.7636": {
+    "nom": "Winterthur, Pfaffenwiesen",
+    "distance_m": 191
+  },
+  "Winterthur, Pfaffenwiesen||Zürich, ETH/Universitätsspital": {
+    "minutes": 42,
+    "changements": 3,
+    "resume": "B 5 → S 29 → S 12 → T 9",
+    "depuis": "Winterthur, Pfaffenwiesen",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Winterthur, Pfaffenwiesen||Zürich, ETH Hönggerberg": {
+    "minutes": 52,
+    "changements": 3,
+    "resume": "B 5 → S 11 → S 8 → B 80",
+    "depuis": "Winterthur, Pfaffenwiesen",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3865,8.4771": {
+    "nom": "Zürich, Rautihalde",
+    "distance_m": 232
+  },
+  "Zürich, Rautihalde||Zürich, ETH/Universitätsspital": {
+    "minutes": 29,
+    "changements": 3,
+    "resume": "B 67 → B 80 → S 19 → T 6",
+    "depuis": "Zürich, Rautihalde",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Rautihalde||Zürich, ETH Hönggerberg": {
+    "minutes": 20,
+    "changements": 1,
+    "resume": "B 67 → B 80",
+    "depuis": "Zürich, Rautihalde",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4166,8.5982": {
+    "nom": "Wallisellen, Schulhaus Bürgli",
+    "distance_m": 162
+  },
+  "Wallisellen, Schulhaus Bürgli||Zürich, ETH/Universitätsspital": {
+    "minutes": 35,
+    "changements": 1,
+    "resume": "S 19 → T 10",
+    "depuis": "Wallisellen, Schulhaus Bürgli",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Wallisellen, Schulhaus Bürgli||Zürich, ETH Hönggerberg": {
+    "minutes": 27,
+    "changements": 2,
+    "resume": "B 774 → S 14 → B 80",
+    "depuis": "Wallisellen, Schulhaus Bürgli",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3678,8.5157": {
+    "nom": "Zürich, Goldbrunnenplatz",
+    "distance_m": 308
+  },
+  "Zürich, Goldbrunnenplatz||Zürich, ETH/Universitätsspital": {
+    "minutes": 17,
+    "changements": 0,
+    "resume": "T 14",
+    "depuis": "Zürich, Goldbrunnenplatz",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Goldbrunnenplatz||Zürich, ETH Hönggerberg": {
+    "minutes": 24,
+    "changements": 1,
+    "resume": "B 32 → B 69",
+    "depuis": "Zürich, Goldbrunnenplatz",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.386,8.4793": {
+    "nom": "Zürich, Schulhaus Buchlern",
+    "distance_m": 162
+  },
+  "stop@47.4003,8.4429": {
+    "nom": "Schlieren, Am Rietpark",
+    "distance_m": 123
+  },
+  "stop@47.3632,8.5203": {
+    "nom": "Zürich Giesshübel",
+    "distance_m": 145
+  },
+  "Zürich Giesshübel||Zürich, ETH/Universitätsspital": {
+    "minutes": 23,
+    "changements": 1,
+    "resume": "S 4 → T 9",
+    "depuis": "Zürich Giesshübel",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich Giesshübel||Zürich, ETH Hönggerberg": {
+    "minutes": 34,
+    "changements": 1,
+    "resume": "B 72 → B 69",
+    "depuis": "Zürich Giesshübel",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4142,8.3662": {
+    "nom": "Spreitenbach, Rütilochstrasse",
+    "distance_m": 135
+  },
+  "Spreitenbach, Rütilochstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 49,
+    "changements": 3,
+    "resume": "B 13 → T 20 → S 11 → T 6",
+    "depuis": "Spreitenbach, Rütilochstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Spreitenbach, Rütilochstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 46,
+    "changements": 3,
+    "resume": "B 13 → T 20 → S 19 → B 80",
+    "depuis": "Spreitenbach, Rütilochstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.386,8.4794": {
+    "nom": "Zürich, Schulhaus Buchlern",
+    "distance_m": 165
+  },
+  "stop@47.3897,8.5407": {
+    "nom": "Zürich, Röslistrasse",
+    "distance_m": 117
+  },
+  "stop@47.3566,8.5559": {
+    "nom": "Zürich, Fröhlichstrasse",
+    "distance_m": 172
+  },
+  "Zürich, Fröhlichstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 13,
+    "changements": 1,
+    "resume": "T 15 → T 9",
+    "depuis": "Zürich, Fröhlichstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Fröhlichstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 30,
+    "changements": 2,
+    "resume": "T 15 → T 7 → B E",
+    "depuis": "Zürich, Fröhlichstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3688,8.4994": {
+    "nom": "Zürich, Schaufelbergerstrasse",
+    "distance_m": 181
+  },
+  "Zürich, Schaufelbergerstrasse||Zürich, ETH/Universitätsspital": {
+    "minutes": 20,
+    "changements": 0,
+    "resume": "T 14",
+    "depuis": "Zürich, Schaufelbergerstrasse",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Schaufelbergerstrasse||Zürich, ETH Hönggerberg": {
+    "minutes": 26,
+    "changements": 1,
+    "resume": "B 89 → B 80",
+    "depuis": "Zürich, Schaufelbergerstrasse",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.4095,8.5451": {
+    "nom": "Zürich, Sternen Oerlikon",
+    "distance_m": 105
+  },
+  "Zürich, Sternen Oerlikon||Zürich, ETH/Universitätsspital": {
+    "minutes": 15,
+    "changements": 0,
+    "resume": "T 10",
+    "depuis": "Zürich, Sternen Oerlikon",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Zürich, Sternen Oerlikon||Zürich, ETH Hönggerberg": {
+    "minutes": 12,
+    "changements": 1,
+    "resume": "B 61 → B 80",
+    "depuis": "Zürich, Sternen Oerlikon",
+    "vers": "Zürich, ETH Hönggerberg"
+  },
+  "stop@47.3819,8.5339": {
+    "nom": "Zürich, Museum für Gestaltung",
+    "distance_m": 85
   }
 }

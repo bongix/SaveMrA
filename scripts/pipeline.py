@@ -7,7 +7,7 @@
 import json, sys, pathlib, statistics, datetime
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
-import commute, veracite, langue
+import commute, veracite, langue, exclusions
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 F_ANNONCES = RACINE / "data" / "annonces.json"
@@ -157,6 +157,31 @@ def main(local=False):
                 if a.get("source") != "Flatfox" and id_ not in {b["id"] for b in base}:
                     base.append(a)
 
+    # Annonces réservées aux femmes : retirées, mais consignées dans
+    # data/exclues_genre.json pour que la décision reste vérifiable.
+    retirees = []
+    gardees = []
+    for a in base:
+        r = exclusions.analyser(a)
+        a["genre"] = r
+        (retirees if r["niveau"] == "exclusif" else gardees).append(a)
+    # Registre cumulé : une annonce retirée à une passe précédente n'est plus
+    # dans le jeu de données, donc un compteur « de cette passe » retomberait à
+    # zéro dès le passage suivant et la page mentirait.
+    f_log = RACINE / "data" / "exclues_genre.json"
+    registre = {}
+    if f_log.exists():
+        registre = {x["id"]: x for x in json.loads(f_log.read_text())}
+    for a in retirees:
+        registre[a["id"]] = {"id": a["id"], "titre": a["titre"], "url": a.get("url"),
+                             "prix_chf": a.get("prix_chf"), "motifs": a["genre"]["motifs"]}
+    if registre:
+        f_log.write_text(json.dumps(list(registre.values()), ensure_ascii=False, indent=2))
+    if retirees:
+        print(f"  {len(retirees)} annonces réservées aux femmes retirées à cette passe "
+              f"({len(registre)} au total, détail : data/exclues_genre.json)", file=sys.stderr)
+    base = gardees
+
     avant = len(base)
     base = [a for a in base if not (_nombre(a.get("prix_chf")) or 0) > plafond]
     if avant != len(base):
@@ -200,6 +225,7 @@ def main(local=False):
                    "duree_mois": 6, "libelle": "octobre 2026 → mars 2027"},
         "mediane_chf_par_m2": round(mediane_m2, 1) if mediane_m2 else None,
         "loyer_max_chf": plafond,
+        "retirees_genre": len(registre),
         "tranches_prix": criteres["tranches_prix"],
         "medianes_par_type": {c: round(v, 1) for c, v in medianes.items()},
         "_unite_medianes": "CHF/m² sauf SHARED = loyer mensuel médian",

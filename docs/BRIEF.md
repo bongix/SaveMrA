@@ -67,6 +67,27 @@ retombent à 25–35 min. Le classement se fait donc sur Hönggerberg
 (`data/campus.json` → `campus_principal`), et le temps vers ETH Zentrum reste
 affiché en second : utile pour les cours, les séminaires et la vie en ville.
 
+## Annonces réservées aux femmes
+
+Une part non négligeable des colocations zurichoises ne loge que des femmes.
+Ces annonces sont **retirées automatiquement** du jeu de données par
+`scripts/exclusions.py`, et consignées dans `data/exclues_genre.json` pour que
+le retrait reste vérifiable.
+
+La détection sépare deux cas, et c'est délibéré :
+
+- **exclusif** — « women only », « nur für Frauen », « female tenant only »,
+  « du solltest weiblich sein », ou un « eine Mitbewohnerin » sans équivalent
+  masculin nulle part dans le texte. Retiré.
+- **préférence** — « preferably a woman », « Frauen bevorzugt », « ideal für
+  Studentinnen ». **Conservé et signalé en orange** sur la page : les chances
+  sont faibles, mais ce n'est pas à l'outil de renoncer à la place de MrA.
+
+Le risque réel ici est le faux positif. *« Mitbewohnerin oder Mitbewohner »*,
+*« mein/e Mitbewohnerin »*, *« wir sind vier Frauen und ein Mann »* décrivent
+une colocation mixte, pas une restriction : chaque règle est écrite pour les
+laisser passer, et le jeu de règles est vérifié contre ces cas.
+
 ## Critères de classement
 
 **Tranches de trajet** (porte-à-porte, transports publics réels, arrivée 9 h un
