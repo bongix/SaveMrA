@@ -13,7 +13,8 @@ Trois questions structurent l'outil, dans cet ordre :
 3. **Est-ce lisible ?** — chaque annonce est étiquetée par langue et accompagnée
    d'un résumé en français.
 
-**Tableau de bord publié** : https://claude.ai/code/artifact/87d7dd30-51ad-4755-9d0f-c688f62ca9bf
+**Page publique, à donner à MrA** : https://bongix.github.io/SaveMrA/
+(miroir privé : https://claude.ai/code/artifact/87d7dd30-51ad-4755-9d0f-c688f62ca9bf)
 
 ## Démarrer
 
@@ -31,6 +32,7 @@ quelques secondes : les itinéraires sont mis en cache par arrêt.
 | `python3 scripts/pipeline.py` | Collecte Flatfox + enrichissement complet |
 | `python3 scripts/pipeline.py --local` | Ré-enrichit sans recollecter (après une saisie manuelle) |
 | `python3 scripts/dashboard.py` | Régénère `index.html` (la page publique) |
+| `./scripts/publier.sh` | Tout enchaîne : collecte, page, commit, push sur GitHub Pages |
 | `python3 scripts/commute.py "Zürich, Oerlikon"` | Temps de trajet d'un point vers les deux campus |
 | `python3 scripts/langue.py "möbliertes Zimmer"` | Test du détecteur de langue |
 | `python3 scripts/collecte_flatfox.py 30` | Collecte seule, sur 30 jours |
@@ -56,6 +58,7 @@ scripts/veracite.py          scoring anti-arnaque
 scripts/langue.py            détection de langue
 scripts/pipeline.py          orchestration
 scripts/dashboard.py         génération du tableau de bord
+scripts/publier.sh           collecte + page + push GitHub Pages, en une commande
 
 index.html             le tableau de bord, autonome — servi tel quel par GitHub Pages
 ```

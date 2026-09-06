@@ -58,9 +58,13 @@ def carte(a):
   <div class="fiche__corps">
     <h3><a href="{e(a.get('url'))}" target="_blank" rel="noopener">{e(a.get('titre'))}</a></h3>
     <p class="resume">{e(a.get('resume_fr'))}</p>
-    <p class="lieu">{e(a.get('adresse'))} · arrêt <b>{e(a.get('arret_proche') or '—')}</b>
-       ({e(a.get('marche_min', 0))} min à pied) · {e(t.get('resume',''))}
-       · autre campus {e(autre) if autre is not None else '—'} min</p>
+    <p class="lieu">{' · '.join(x for x in [
+        e(a.get('adresse')),
+        f"arrêt <b>{e(a.get('arret_proche'))}</b> ({e(a.get('marche_min', 0))} min à pied)"
+            if a.get('arret_proche') else '',
+        e(t.get('resume', '')),
+        f"ETH Zentrum {e(autre)} min" if autre is not None else '',
+    ] if x)}</p>
     <ul class="puces">{''.join(f'<li>{e(p)}</li>' for p in puces)}</ul>
     <p class="dispo dispo--{e(d.get('code','inconnu'))}">{e(d.get('label'))} — {e(d.get('detail'))}</p>
     {'<p class="alerte">⚠ ' + ' · '.join(e(x) for x in alerte) + '</p>' if alerte else ''}
@@ -300,6 +304,12 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     Il signale où regarder, il ne remplace pas une visite.</p>
     <p><b>Aucun paiement avant d'avoir vu le logement.</b> C'est la seule règle qui
     protège vraiment.</p>
+    <h3>Le reste du dossier</h3>
+    <p><a href="https://github.com/bongix/SaveMrA/blob/main/docs/CANDIDATURE.md">Le message à envoyer et le dossier à préparer</a> ·
+    <a href="https://github.com/bongix/SaveMrA/blob/main/docs/GLOSSAIRE.md">Décoder une annonce en allemand</a> ·
+    <a href="https://github.com/bongix/SaveMrA/blob/main/docs/ANTI-ARNAQUE.md">Les six questions de contrôle à poser</a> ·
+    <a href="https://github.com/bongix/SaveMrA/blob/main/docs/SOURCES.md">Où chercher ailleurs</a> ·
+    <a href="https://github.com/bongix/SaveMrA">Le code</a></p>
   </footer>
 </div>
 

@@ -1,9 +1,39 @@
 {
   "tranches": [
-    {"code": "A", "label": "≤ 15 min",      "max_min": 15,  "couleur": "#12805c", "verdict": "Idéal — à pied/vélo ou 1 tram direct"},
-    {"code": "B", "label": "16–30 min",     "max_min": 30,  "couleur": "#3d7a2e", "verdict": "Très bon — trajet quotidien confortable"},
-    {"code": "C", "label": "31–45 min",     "max_min": 45,  "couleur": "#a8770f", "verdict": "Acceptable — 1h30/jour de transport"},
-    {"code": "D", "label": "46–60 min",     "max_min": 60,  "couleur": "#b5560f", "verdict": "Limite — seulement si prix/qualité exceptionnels"},
-    {"code": "E", "label": "> 60 min",      "max_min": 9999,"couleur": "#a11d1d", "verdict": "À écarter pour un stage"}
+    {
+      "code": "A",
+      "label": "≤ 15 min",
+      "max_min": 15,
+      "couleur": "#12805c",
+      "verdict": "Idéal — à pied, à vélo, ou un seul bus"
+    },
+    {
+      "code": "B",
+      "label": "16–30 min",
+      "max_min": 30,
+      "couleur": "#3d7a2e",
+      "verdict": "Très bon — trajet quotidien confortable"
+    },
+    {
+      "code": "C",
+      "label": "31–45 min",
+      "max_min": 45,
+      "couleur": "#a8770f",
+      "verdict": "Acceptable — 1 h 30 de transport par jour"
+    },
+    {
+      "code": "D",
+      "label": "46–60 min",
+      "max_min": 60,
+      "couleur": "#b5560f",
+      "verdict": "Limite — seulement si le prix et la qualité le justifient"
+    },
+    {
+      "code": "E",
+      "label": "> 60 min",
+      "max_min": 9999,
+      "couleur": "#a11d1d",
+      "verdict": "À écarter pour un stage de 6 mois"
+    }
   ]
 }
