@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-09-06T14:20:19",
+  "genere_le": "2026-09-06T14:27:01",
   "campus_reference": "hoenggerberg",
   "sejour": {
     "debut": "2026-10-01",
@@ -7,7 +7,7 @@
     "duree_mois": 6,
     "libelle": "octobre 2026 → mars 2027"
   },
-  "mediane_chf_par_m2": 26.7,
+  "mediane_chf_par_m2": 30.6,
   "loyer_max_chf": 1600,
   "retirees_genre": 15,
   "tranches_prix": [
@@ -38,7 +38,7 @@
   ],
   "medianes_par_type": {
     "SHARED": 1100.0,
-    "APARTMENT": 26.7
+    "APARTMENT": 30.6
   },
   "_unite_medianes": "CHF/m² sauf SHARED = loyer mensuel médian",
   "annonces": [
@@ -1252,8 +1252,7 @@
       "signaux": [
         "annonce_detaillee",
         "pas_adresse_precise",
-        "portail_verifie",
-        "prix_coherent"
+        "portail_verifie"
       ],
       "genre": {
         "niveau": null,
@@ -1293,7 +1292,7 @@
         "confiance": 96
       },
       "veracite": {
-        "score": 74,
+        "score": 64,
         "plafonne_sans_contact": false,
         "contact_etabli": false,
         "niveau": "probablement OK",
@@ -1309,11 +1308,6 @@
             "cle": "portail_verifie",
             "poids": 18,
             "texte": "Publiée sur un portail à comptes vérifiés (Flatfox, Homegate, ImmoScout24, wohnen.ethz.ch)"
-          },
-          {
-            "cle": "prix_coherent",
-            "poids": 10,
-            "texte": "Prix dans la fourchette du marché pour le quartier et la surface"
           }
         ],
         "negatifs": [
@@ -1326,6 +1320,7 @@
         "a_verifier": [
           "adresse_verifiee",
           "visite_proposee",
+          "prix_coherent",
           "colocs_joignables"
         ]
       },
@@ -4655,6 +4650,7 @@
         "adresse_verifiee",
         "annonce_detaillee",
         "portail_verifie",
+        "prix_trop_bas",
         "regie_identifiable"
       ],
       "genre": {
@@ -4723,7 +4719,13 @@
             "texte": "Régie / agence inscrite au registre du commerce, adresse et IDE vérifiables"
           }
         ],
-        "negatifs": [],
+        "negatifs": [
+          {
+            "cle": "prix_trop_bas",
+            "poids": -25,
+            "texte": "Prix >30 % sous le marché du quartier pour cette surface"
+          }
+        ],
         "a_verifier": [
           "visite_proposee",
           "prix_coherent",
@@ -5645,6 +5647,124 @@
         "label": "1 301–1 600"
       },
       "resume_fr": "Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1'600/mois charges comprises · 32 min du campus (31–45 min)"
+    },
+    {
+      "id": "flatfox-86230059",
+      "source": "Flatfox",
+      "url": "https://flatfox.ch/en/flat/schonenwerdstrasse-3-8952-schlieren/86230059/",
+      "titre": "Schönenwerdstrasse 3, 8952 Schlieren - CHF 1’560 incl. utilities per month",
+      "description": "Wir vermieten per sofort eine attraktive 2-Zimmerwohnung in Schlieren. \n\n  \n\n\nDiese gemütliche Wohnung überzeugt durch eine angenehme Atmosphäre und einen praktischen Grundriss. \n\n  \n\n\nAusstattung: \n\n  \n\n\n-Küche mit Einbauherd, Kühlschrank und Backofen \n\n-Badezimmer mit hellen Platten \n\n-Einbauschränke im Wohnbereich \n\n-Parkettboden im Wohn- und Schlafbereich \n\n  \n\n\nKommen Sie gerne an unserem Besichtigungstermin vorbei und machen Sie sich selbst ein Bild der Wohnung. \n\n  \n\n\nDie Wohnung wurde frisch gestrichen und es wurden Bodenbelagsarbeiten durchgeführt. \n\n  \n\n\nBitte beachten Sie, dass die Fotos typenähnlich sind und den Ausbaustandard zeigen. \n\n  \n\n\nFür Fragen stehen wir Ihnen selbstverständlich gerne zur Verfügung.",
+      "prix_chf": 1560,
+      "charges_incluses": true,
+      "pieces": "2.5",
+      "surface_m2": 49,
+      "meuble": false,
+      "temporaire": false,
+      "type": "APARTMENT",
+      "adresse": "Schönenwerdstrasse 3, 8952 Schlieren",
+      "quartier": "8952 Schlieren",
+      "arret_proche": "Schlieren, Spital Limmattal",
+      "lat": 47.393921477785,
+      "lon": 8.426331652444,
+      "date_emmenagement": null,
+      "publiee_le": "2026-08-26",
+      "photos": 5,
+      "regie": "Apleona Schweiz AG",
+      "signaux": [
+        "adresse_verifiee",
+        "annonce_detaillee",
+        "portail_verifie",
+        "prix_coherent",
+        "regie_identifiable"
+      ],
+      "genre": {
+        "niveau": null,
+        "motifs": []
+      },
+      "marche_min": 2,
+      "trajet": {
+        "zentrum": {
+          "minutes": 38,
+          "changements": 2,
+          "resume": "B 302 → S 12 → T 6",
+          "depuis": "Schlieren, Spital Limmattal",
+          "vers": "Zürich, ETH/Universitätsspital",
+          "minutes_transit": 36
+        },
+        "hoenggerberg": {
+          "minutes": 32,
+          "changements": 1,
+          "resume": "T 20 → B 80",
+          "depuis": "Schlieren, Spital Limmattal",
+          "vers": "Zürich, ETH Hönggerberg",
+          "minutes_transit": 30
+        },
+        "origine_utilisee": "Schlieren, Spital Limmattal",
+        "marche_initiale_min": 2,
+        "campus_reference": "hoenggerberg",
+        "minutes": 32,
+        "minutes_autre_campus": 38,
+        "tranche": "C",
+        "tranche_label": "31–45 min",
+        "tranche_couleur": "#a8770f"
+      },
+      "langue": {
+        "code": "gsw",
+        "nom": "Suisse allemand",
+        "drapeau": "🇨🇭",
+        "confiance": 86
+      },
+      "veracite": {
+        "score": 75,
+        "plafonne_sans_contact": true,
+        "contact_etabli": false,
+        "niveau": "probablement OK",
+        "couleur": "#3d7a2e",
+        "bloquants": [],
+        "positifs": [
+          {
+            "cle": "adresse_verifiee",
+            "poids": 15,
+            "texte": "Adresse exacte donnée et cohérente avec les photos (Street View)"
+          },
+          {
+            "cle": "annonce_detaillee",
+            "poids": 8,
+            "texte": "Annonce détaillée : surface, étage, charges, date, règles"
+          },
+          {
+            "cle": "portail_verifie",
+            "poids": 18,
+            "texte": "Publiée sur un portail à comptes vérifiés (Flatfox, Homegate, ImmoScout24, wohnen.ethz.ch)"
+          },
+          {
+            "cle": "prix_coherent",
+            "poids": 10,
+            "texte": "Prix dans la fourchette du marché pour le quartier et la surface"
+          },
+          {
+            "cle": "regie_identifiable",
+            "poids": 20,
+            "texte": "Régie / agence inscrite au registre du commerce, adresse et IDE vérifiables"
+          }
+        ],
+        "negatifs": [],
+        "a_verifier": [
+          "visite_proposee",
+          "colocs_joignables"
+        ]
+      },
+      "dispo": {
+        "code": "immediat",
+        "label": "Dispo. immédiate",
+        "ok": true,
+        "detail": "Entrée possible tout de suite — compatible avec une arrivée en octobre."
+      },
+      "tranche_prix": {
+        "code": "P4",
+        "label": "1 301–1 600"
+      },
+      "resume_fr": "Appartement · 49 m² · 2.5 pièces · CHF 1'560/mois charges comprises · 32 min du campus (31–45 min)"
     },
     {
       "id": "flatfox-86307318",
@@ -7299,8 +7419,7 @@
       "regie": null,
       "signaux": [
         "pas_adresse_precise",
-        "portail_verifie",
-        "prix_coherent"
+        "portail_verifie"
       ],
       "genre": {
         "niveau": null,
@@ -7340,22 +7459,17 @@
         "confiance": 75
       },
       "veracite": {
-        "score": 66,
+        "score": 56,
         "plafonne_sans_contact": false,
         "contact_etabli": false,
-        "niveau": "probablement OK",
-        "couleur": "#3d7a2e",
+        "niveau": "à vérifier",
+        "couleur": "#a8770f",
         "bloquants": [],
         "positifs": [
           {
             "cle": "portail_verifie",
             "poids": 18,
             "texte": "Publiée sur un portail à comptes vérifiés (Flatfox, Homegate, ImmoScout24, wohnen.ethz.ch)"
-          },
-          {
-            "cle": "prix_coherent",
-            "poids": 10,
-            "texte": "Prix dans la fourchette du marché pour le quartier et la surface"
           }
         ],
         "negatifs": [
@@ -7368,6 +7482,7 @@
         "a_verifier": [
           "adresse_verifiee",
           "visite_proposee",
+          "prix_coherent",
           "colocs_joignables"
         ]
       },

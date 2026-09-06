@@ -2306,5 +2306,23 @@
   "stop@47.3819,8.5339": {
     "nom": "Zürich, Museum für Gestaltung",
     "distance_m": 85
+  },
+  "stop@47.3939,8.4263": {
+    "nom": "Schlieren, Spital Limmattal",
+    "distance_m": 181
+  },
+  "Schlieren, Spital Limmattal||Zürich, ETH/Universitätsspital": {
+    "minutes": 36,
+    "changements": 2,
+    "resume": "B 302 → S 12 → T 6",
+    "depuis": "Schlieren, Spital Limmattal",
+    "vers": "Zürich, ETH/Universitätsspital"
+  },
+  "Schlieren, Spital Limmattal||Zürich, ETH Hönggerberg": {
+    "minutes": 30,
+    "changements": 1,
+    "resume": "T 20 → B 80",
+    "depuis": "Schlieren, Spital Limmattal",
+    "vers": "Zürich, ETH Hönggerberg"
   }
 }

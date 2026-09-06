@@ -31,19 +31,27 @@ def _get(url):
 def collecter(jours=21, loyer_max=LOYER_MAX):
     total = _get(f"{API}?limit=1")["count"]
     limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=jours)
+    # Les pk ne sont pas strictement chronologiques : une page peut contenir
+    # quelques vieilles annonces au milieu de récentes. S'arrêter à la première
+    # ancienne tronquait la moisson de façon imprévisible (145 annonces une
+    # fois, 67 la suivante). On ne s'arrête qu'après PAGES_VIDES pages
+    # consécutives sans une seule annonce dans la fenêtre.
+    PAGES_VIDES = 3
     offset = max(0, total - PAGE)
-    brut, stop = [], False
-    while offset >= 0 and not stop:
+    brut, vides = [], 0
+    while offset >= 0 and vides < PAGES_VIDES:
         page = _get(f"{API}?limit={PAGE}&offset={offset}")["results"]
+        recentes = 0
         for r in page:
             pub = r.get("published") or r.get("created")
             if not pub:
                 continue
-            if datetime.datetime.fromisoformat(pub) < limite:
-                stop = True
-                continue
-            brut.append(r)
-        print(f"  offset {offset:>6}  → {len(brut)} annonces récentes", file=sys.stderr)
+            if datetime.datetime.fromisoformat(pub) >= limite:
+                brut.append(r)
+                recentes += 1
+        vides = 0 if recentes else vides + 1
+        print(f"  offset {offset:>6}  +{recentes:>3} → {len(brut)} annonces dans la fenêtre",
+              file=sys.stderr)
         if offset == 0:
             break
         offset = max(0, offset - PAGE)
