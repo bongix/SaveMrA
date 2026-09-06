@@ -42,7 +42,7 @@ a{color:var(--accent)}
 
 /* ── tuiles ──────────────────────────────────────────── */
 .tuiles{display:grid;gap:10px;margin:22px 0 26px;
-  grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+  grid-template-columns:repeat(auto-fit,minmax(132px,1fr))}
 .tuile{background:var(--surface);border:1px solid var(--ligne);border-radius:3px;
   padding:14px 16px;box-shadow:var(--ombre);display:flex;flex-direction:column;gap:2px}
 .tuile b{font-family:var(--f-data);font-size:38px;font-weight:600;line-height:1;
@@ -112,6 +112,9 @@ input[type=range]{padding:0;accent-color:var(--accent);width:112px}
 .lieu b{color:var(--ink);font-weight:500}
 .puces{display:flex;flex-wrap:wrap;gap:5px;list-style:none;margin:0 0 6px;padding:0}
 .puces li{font-size:11.5px;background:var(--surface2);border-radius:2px;padding:1px 7px;color:var(--ink2)}
+.puce-meuble{color:#fff;background:var(--c);font-weight:500}
+.puce-meuble--flou{background:transparent;color:var(--c);border:1px dashed currentColor}
+.ameub{margin:5px 0 0;font-size:12.5px;color:var(--ink2);font-style:italic}
 .dispo{margin:0;font-size:12.5px;color:var(--ink2)}
 .dispo--ideal,.dispo--immediat{color:#12805C}
 :root[data-theme="dark"] .dispo--ideal,:root[data-theme="dark"] .dispo--immediat{color:#5FBF9B}
@@ -165,7 +168,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
       résumé en français.</p>
     </div>
     <p class="meta">
-      <b>68</b> annonces · mis à jour le <b>06.09.2026 à 14:27</b><br>
+      <b>68</b> annonces · mis à jour le <b>06.09.2026 à 14:33</b><br>
       Labo : <b>ETH Hönggerberg — HCI (chimie inorganique)</b><br>
       Budget : <b>≤ CHF 1600</b> charges comprises<br>
       Médiane du lot : <b>30.6 CHF/m²</b><br>
@@ -173,7 +176,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     </p>
   </header>
 
-  <div class="tuiles"><div class="tuile"><b>48</b><span>à 30 min ou moins</span><i>du campus de référence</i></div><div class="tuile"><b>61</b><span>annonces crédibles</span><i>véracité ≥ 60 %</i></div><div class="tuile"><b>56</b><span>libres à temps</span><i>octobre 2026 → mars 2027</i></div><div class="tuile"><b>1</b><span>à écarter</span><i>véracité &lt; 40 %</i></div></div>
+  <div class="tuiles"><div class="tuile"><b>48</b><span>à 30 min ou moins</span><i>du campus de référence</i></div><div class="tuile"><b>61</b><span>annonces crédibles</span><i>véracité ≥ 60 %</i></div><div class="tuile"><b>56</b><span>libres à temps</span><i>octobre 2026 → mars 2027</i></div><div class="tuile"><b>41</b><span>meublés</span><i>confirmé par l&#x27;annonce</i></div><div class="tuile"><b>1</b><span>à écarter</span><i>véracité &lt; 40 %</i></div></div>
 
   <div class="filtres" role="group" aria-label="Filtres">
     <div class="grp"><label>Trajet</label>
@@ -192,6 +195,12 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
       <select id="fl"><option value="">toutes</option><option value="de">Allemand</option>
       <option value="gsw">Suisse allemand</option><option value="en">Anglais</option>
       <option value="fr">Français</option><option value="it">Italien</option></select>
+    </div>
+    <div class="grp"><label>Ameublement</label>
+      <button class="bouton" data-f="meuble" data-v="meuble" aria-pressed="false">Meublé</button>
+      <button class="bouton" data-f="meuble" data-v="partiel" aria-pressed="false">Partiel</button>
+      <button class="bouton" data-f="meuble" data-v="non_meuble" aria-pressed="false">Non meublé</button>
+      <button class="bouton" data-f="meuble" data-v="a_confirmer" aria-pressed="false">À confirmer</button>
     </div>
     <div class="grp"><label for="ft">Type</label>
       <select id="ft"><option value="">tous</option><option value="SHARED">Colocation</option>
@@ -220,15 +229,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1385"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#12805c">
     <b>9</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/bombachsteig-11-8049-zurich/86317038/" target="_blank" rel="noopener">Bombachsteig 11, 8049 Zürich - CHF 1’385</a></h3>
-    <p class="resume">Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 1&#x27;385/mois charges comprises · dispo. 2026-10-01 · 9 min du campus (≤ 15 min)</p>
+    <p class="resume">Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 1&#x27;385/mois charges comprises · meublé · dispo. 2026-10-01 · 9 min du campus (≤ 15 min)</p>
     <p class="lieu">Bombachsteig 11, 8049 Zürich · arrêt <b>Zürich, Wartau</b> (3 min à pied) · ETH Zentrum 26 min</p>
-    <ul class="puces"><li>charges comprises</li><li>15 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li><li>15 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -260,7 +276,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="815"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#12805c">
     <b>13</b><span>min</span>
   </div>
@@ -268,7 +285,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/margrit-rainer-strasse-14-8050-zurich/86339243/" target="_blank" rel="noopener">Margrit-Rainer-Strasse 14, 8050 Zürich - CHF 815 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 815/mois charges comprises · 13 min du campus (≤ 15 min)</p>
     <p class="lieu">Margrit-Rainer-Strasse 14, 8050 Zürich · arrêt <b>Zürich, Neunbrunnen</b> (1 min à pied) · ETH Zentrum 27 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -300,7 +323,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1260"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#12805c">
     <b>13</b><span>min</span>
   </div>
@@ -308,7 +332,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/pflugstrasse-10-10-8006-zurich/86303839/" target="_blank" rel="noopener">Pflugstrasse, 10, 10, 8006 Zürich - CHF 1’260 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;260/mois charges comprises · meublé · location temporaire · 13 min du campus (≤ 15 min)</p>
     <p class="lieu">Pflugstrasse, 10, 10, 8006 Zürich · arrêt <b>Zürich, Rotbuchstrasse</b> (2 min à pied) · ETH Zentrum 15 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -340,7 +370,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1140"
          data-tprix="P3"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#12805c">
     <b>13</b><span>min</span>
   </div>
@@ -348,7 +379,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/katzenbachstrasse-223-8052-zurich/86295559/" target="_blank" rel="noopener">Katzenbachstrasse 223, 8052 Zurich - CHF 1’140 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;140/mois charges comprises · meublé · dispo. 2026-09-01 · 13 min du campus (≤ 15 min)</p>
     <p class="lieu">Katzenbachstrasse 223, 8052 Zurich · arrêt <b>Zürich, Hertensteinstrasse</b> (3 min à pied) · ETH Zentrum 28 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -380,7 +417,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1100"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#12805c">
     <b>13</b><span>min</span>
   </div>
@@ -388,7 +426,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/edisonstr-5-8050-zurich/86288406/" target="_blank" rel="noopener">Edisonstr. 5, 8050 Zürich - CHF 1’100 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 19 m² · 1 pièce · CHF 1&#x27;100/mois charges comprises · 13 min du campus (≤ 15 min)</p>
     <p class="lieu">Edisonstr. 5, 8050 Zürich · arrêt <b>Zürich, Sternen Oerlikon</b> (1 min à pied) · ETH Zentrum 16 min</p>
-    <ul class="puces"><li>charges comprises</li><li>19 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>19 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -420,15 +464,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1377"
          data-tprix="P4"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="non_meuble">
   <div class="fiche__minutes" style="--bande:#12805c">
     <b>15</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/hohlstrasse-502-8048-zurich/86324073/" target="_blank" rel="noopener">Hohlstrasse 502, 8048 Zürich - CHF 1’377 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1&#x27;377/mois charges comprises · dispo. 2026-11-01 · 15 min du campus (≤ 15 min)</p>
+    <p class="resume">Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1&#x27;377/mois charges comprises · non meublé · dispo. 2026-11-01 · 15 min du campus (≤ 15 min)</p>
     <p class="lieu">Hohlstrasse 502, 8048 Zürich · arrêt <b>Zürich, Letzibach</b> (1 min à pied) · ETH Zentrum 26 min</p>
-    <ul class="puces"><li>charges comprises</li><li>logement 95 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#B5560F"
+          title="texte de l&#x27;annonce">Non meublé</li>
+      <li>charges comprises</li><li>logement 95 m²</li>
+    </ul>
+    <p class="ameub">La chambre est vide ; seules les parties communes sont meublées. Compter un lit, un bureau et une armoire à acheter puis à revendre.</p>
     <p class="dispo dispo--tardif">Libre dès le 01/11/2026 — 31 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -469,7 +520,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1300"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>16</b><span>min</span>
   </div>
@@ -477,7 +529,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8064-zurich/86283815/" target="_blank" rel="noopener">8064 Zürich - CHF 1’300</a></h3>
     <p class="resume">Appartement · 70 m² · 3.5 pièces · CHF 1&#x27;300/mois charges comprises · 16 min du campus (16–30 min)</p>
     <p class="lieu">8064 Zürich · arrêt <b>Zürich, Werdhölzli</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>charges comprises</li><li>70 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>70 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -509,7 +567,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1600"
          data-tprix="P4"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>17</b><span>min</span>
   </div>
@@ -517,7 +576,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/konradstrasse-68-8005-zurich/86284314/" target="_blank" rel="noopener">Konradstrasse 68, 8005 Zürich - CHF 1’600 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;600/mois charges comprises · 17 min du campus (16–30 min)</p>
     <p class="lieu">Konradstrasse 68, 8005 Zürich · arrêt <b>Zürich, Museum für Gestaltung</b> (1 min à pied) · ETH Zentrum 13 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -549,7 +614,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1600"
          data-tprix="P4"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>17</b><span>min</span>
   </div>
@@ -557,7 +623,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8006-zurich/86335704/" target="_blank" rel="noopener">8006 Zurich - CHF 1’600 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;600/mois charges comprises · 17 min du campus (16–30 min)</p>
     <p class="lieu">8006 Zurich · arrêt <b>Zürich, Scheuchzerstrasse</b> (1 min à pied) · ETH Zentrum 10 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -589,7 +661,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="925"
          data-tprix="P2"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>18</b><span>min</span>
   </div>
@@ -597,7 +670,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/hunzikerareal-8050-zurich/86328671/" target="_blank" rel="noopener">Hunzikerareal, 8050 Zürich - CHF 925 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 925/mois charges comprises · meublé · location temporaire · dispo. 2026-10-13 · 18 min du campus (16–30 min)</p>
     <p class="lieu">Hunzikerareal, 8050 Zürich · arrêt <b>Zürich, Riedbach</b> (1 min à pied) · ETH Zentrum 25 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 13/10/2026 — 12 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -629,7 +708,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1500"
          data-tprix="P4"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>18</b><span>min</span>
   </div>
@@ -637,7 +717,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/bachmattstrasse-48-8048-zurich/86310947/" target="_blank" rel="noopener">Bachmattstrasse 48, 8048 Zürich - CHF 1’500 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 3.5 pièces · CHF 1&#x27;500/mois charges comprises · location temporaire · 18 min du campus (16–30 min)</p>
     <p class="lieu">Bachmattstrasse 48, 8048 Zürich · arrêt <b>Zürich, Bachmattstrasse</b> (1 min à pied) · ETH Zentrum 27 min</p>
-    <ul class="puces"><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -669,7 +755,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="900"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>18</b><span>min</span>
   </div>
@@ -677,7 +764,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8050-zurich/86287937/" target="_blank" rel="noopener">8050 Zurich - CHF 900 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 44 m² · 2 pièces · CHF 900/mois charges comprises · meublé · location temporaire · dispo. 2026-09-12 · 18 min du campus (16–30 min)</p>
     <p class="lieu">8050 Zurich · arrêt <b>Zürich, Riedgraben</b> (3 min à pied) · ETH Zentrum 23 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>44 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>44 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 12/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -709,7 +802,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1350"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>19</b><span>min</span>
   </div>
@@ -717,7 +811,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/riedtlistrasse-8-8006-zurich/86295782/" target="_blank" rel="noopener">Riedtlistrasse 8, 8006 Zürich - CHF 1’350 excl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 76 m² · 1 pièce · CHF 1&#x27;350/mois charges comprises · meublé · dispo. 2026-09-15 · 19 min du campus (16–30 min)</p>
     <p class="lieu">Riedtlistrasse 8, 8006 Zürich · arrêt <b>Zürich, Röslistrasse</b> (1 min à pied) · ETH Zentrum 6 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>logement 76 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li><li>logement 76 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 15/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -749,7 +849,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1400"
          data-tprix="P4"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>19</b><span>min</span>
   </div>
@@ -757,7 +858,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8057-zurich/86339156/" target="_blank" rel="noopener">8057 Zürich - CHF 1’400 excl. utilities per month</a></h3>
     <p class="resume">Appartement · 2 pièces · CHF 1&#x27;400/mois charges comprises · meublé · location temporaire · dispo. 2026-10-06 · 19 min du campus (16–30 min)</p>
     <p class="lieu">8057 Zürich · arrêt <b>Zürich, Universität Irchel</b> (4 min à pied) · ETH Zentrum 11 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 06/10/2026 — 5 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -789,7 +896,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1300"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>20</b><span>min</span>
   </div>
@@ -797,7 +905,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/hohlstrasse-49-8004-zurich/86307286/" target="_blank" rel="noopener">Hohlstrasse 49, 8004 Zürich - CHF 1’300 excl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;300/mois charges comprises · meublé · 20 min du campus (16–30 min)</p>
     <p class="lieu">Hohlstrasse 49, 8004 Zürich · arrêt <b>Zürich, Helvetiaplatz</b> (2 min à pied) · ETH Zentrum 21 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -829,7 +943,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1520"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>20</b><span>min</span>
   </div>
@@ -837,7 +952,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/rigistrasse-18-8006-zurich/86297762/" target="_blank" rel="noopener">Rigistrasse 18, 8006 Zürich - CHF 1’520 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 172 m² · 1 pièce · CHF 1&#x27;520/mois charges comprises · meublé · dispo. 2026-09-01 · 20 min du campus (16–30 min)</p>
     <p class="lieu">Rigistrasse 18, 8006 Zürich · arrêt <b>Zürich, Vogelsangstrasse</b> (2 min à pied) · ETH Zentrum 6 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>logement 172 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li><li>logement 172 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -869,15 +990,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1377"
          data-tprix="P4"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="partiel">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>21</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/8048-zurich/86324307/" target="_blank" rel="noopener">8048 Zürich - CHF 1’377 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1&#x27;377/mois charges comprises · dispo. 2026-11-01 · 21 min du campus (16–30 min)</p>
+    <p class="resume">Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1&#x27;377/mois charges comprises · partiellement meublé · dispo. 2026-11-01 · 21 min du campus (16–30 min)</p>
     <p class="lieu">8048 Zürich · arrêt <b>Zürich, Schulhaus Buchlern</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>charges comprises</li><li>logement 95 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#A8770F"
+          title="texte de l&#x27;annonce">Partiellement meublé</li>
+      <li>charges comprises</li><li>logement 95 m²</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 01/11/2026 — 31 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -909,7 +1037,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="985"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>21</b><span>min</span>
   </div>
@@ -917,7 +1046,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8048-zurich/86307449/" target="_blank" rel="noopener">8048 Zurich - CHF 985 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 985/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 21 min du campus (16–30 min)</p>
     <p class="lieu">8048 Zurich · arrêt <b>Zürich, Schulhaus Buchlern</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -949,7 +1084,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="990"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>21</b><span>min</span>
   </div>
@@ -957,7 +1093,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8048-zurich/86304479/" target="_blank" rel="noopener">8048 Zürich - CHF 990 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 990/mois charges comprises · meublé · dispo. 2026-09-01 · 21 min du campus (16–30 min)</p>
     <p class="lieu">8048 Zürich · arrêt <b>Zürich, Schulhaus Buchlern</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -989,7 +1131,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="990"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>21</b><span>min</span>
   </div>
@@ -997,7 +1140,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8048-zurich/86304482/" target="_blank" rel="noopener">8048 Zürich - CHF 990 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 990/mois charges comprises · meublé · 21 min du campus (16–30 min)</p>
     <p class="lieu">8048 Zürich · arrêt <b>Zürich, Schulhaus Buchlern</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1029,7 +1178,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1500"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>21</b><span>min</span>
   </div>
@@ -1037,7 +1187,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8048-zurich/86280816/" target="_blank" rel="noopener">8048 Zürich - CHF 1’500 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;500/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 21 min du campus (16–30 min)</p>
     <p class="lieu">8048 Zürich · arrêt <b>Zürich, Schulhaus Buchlern</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1069,7 +1225,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="680"
          data-tprix="P1"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>22</b><span>min</span>
   </div>
@@ -1077,7 +1234,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/wolfbachstrasse-11-8032-zurich/86310973/" target="_blank" rel="noopener">Wolfbachstrasse,  11, 8032 Zürich - CHF 680 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 680/mois charges comprises · meublé · location temporaire · 22 min du campus (16–30 min)</p>
     <p class="lieu">Wolfbachstrasse,  11, 8032 Zürich · arrêt <b>Zürich, Kunsthaus</b> (2 min à pied) · ETH Zentrum 5 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>18 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>18 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1109,7 +1272,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1100"
          data-tprix="P3"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>23</b><span>min</span>
   </div>
@@ -1117,7 +1281,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/meientalstrasse-78-8048-zurich/86311257/" target="_blank" rel="noopener">Meientalstrasse 78, 8048 Zürich - CHF 1’100 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;100/mois charges comprises · meublé · dispo. 2026-09-15 · 23 min du campus (16–30 min)</p>
     <p class="lieu">Meientalstrasse 78, 8048 Zürich · arrêt <b>Zürich, Rautihalde</b> (3 min à pied) · ETH Zentrum 32 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 15/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1149,7 +1319,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1350"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>23</b><span>min</span>
   </div>
@@ -1157,7 +1328,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8004-zurich/86335775/" target="_blank" rel="noopener">8004 Zürich - CHF 1’350 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1&#x27;350/mois charges comprises · meublé · dispo. 2026-10-01 · 23 min du campus (16–30 min)</p>
     <p class="lieu">8004 Zürich · arrêt <b>Zürich, Güterbahnhof</b> (3 min à pied) · ETH Zentrum 21 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>18 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li><li>18 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1189,7 +1366,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1400"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>23</b><span>min</span>
   </div>
@@ -1197,7 +1375,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8004-zurich/86326469/" target="_blank" rel="noopener">8004 Zurich - CHF 1’400 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;400/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 23 min du campus (16–30 min)</p>
     <p class="lieu">8004 Zurich · arrêt <b>Zürich, Güterbahnhof</b> (3 min à pied) · ETH Zentrum 21 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1229,7 +1413,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="990"
          data-tprix="P2"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>23</b><span>min</span>
   </div>
@@ -1237,7 +1422,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8004-zurich/86339303/" target="_blank" rel="noopener">8004 Zürich - CHF 990 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 3.5 pièces · CHF 990/mois charges comprises · meublé · location temporaire · dispo. 2026-10-05 · 23 min du campus (16–30 min)</p>
     <p class="lieu">8004 Zürich · arrêt <b>Zürich, Güterbahnhof</b> (3 min à pied) · ETH Zentrum 21 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 05/10/2026 — 4 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -1269,15 +1460,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="938"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>23</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/8051-zurich/86324051/" target="_blank" rel="noopener">8051 Zürich - CHF 938</a></h3>
-    <p class="resume">Appartement · 1 pièce · CHF 938/mois charges comprises · 23 min du campus (16–30 min)</p>
+    <p class="resume">Appartement · 1 pièce · CHF 938/mois charges comprises · meublé · 23 min du campus (16–30 min)</p>
     <p class="lieu">8051 Zürich · arrêt <b>Zürich, Roswiesen</b> (3 min à pied) · ETH Zentrum 20 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     <p class="genre">Préférence féminine annoncée — « ideal für Studentinnen » · colocation majoritairement féminine. Candidature possible, mais les chances sont faibles.</p>
@@ -1309,7 +1507,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1100"
          data-tprix="P3"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>24</b><span>min</span>
   </div>
@@ -1317,7 +1516,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/luegislandstrasse-8051-zurich/86336532/" target="_blank" rel="noopener">Luegislandstrasse, 8051 Zurich - CHF 1’100 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 24 m² · 1 pièce · CHF 1&#x27;100/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 24 min du campus (16–30 min)</p>
     <p class="lieu">Luegislandstrasse, 8051 Zurich · arrêt <b>Zürich, Herzogenmühlestrasse</b> (2 min à pied) · ETH Zentrum 19 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>24 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>24 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1349,7 +1554,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1011"
          data-tprix="P3"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>24</b><span>min</span>
   </div>
@@ -1357,7 +1563,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/samariterstrasse-18-8032-zurich/86333867/" target="_blank" rel="noopener">Samariterstrasse 18, 8032 Zürich - CHF 1’011 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 14 m² · 1 pièce · CHF 1&#x27;011/mois charges comprises · dispo. 2026-10-01 · 24 min du campus (16–30 min)</p>
     <p class="lieu">Samariterstrasse 18, 8032 Zürich · arrêt <b>Zürich, Hölderlinstrasse</b> (2 min à pied) · ETH Zentrum 15 min</p>
-    <ul class="puces"><li>charges comprises</li><li>14 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>14 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1389,7 +1601,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1390"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>24</b><span>min</span>
   </div>
@@ -1397,7 +1610,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/minervastrasse-29-8032-zurich/86307204/" target="_blank" rel="noopener">Minervastrasse 29, 8032 Zürich - CHF 1’390 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 1&#x27;390/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 24 min du campus (16–30 min)</p>
     <p class="lieu">Minervastrasse 29, 8032 Zürich · arrêt <b>Zürich, Sprecherstrasse</b> (2 min à pied) · ETH Zentrum 9 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>12 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>12 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1429,7 +1648,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1280"
          data-tprix="P3"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>24</b><span>min</span>
   </div>
@@ -1437,7 +1657,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8047-zurich/86328754/" target="_blank" rel="noopener">8047 zurich - CHF 1’280 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 140 m² · 1 pièce · CHF 1&#x27;280/mois charges comprises · meublé · location temporaire · dispo. 2026-10-13 · 24 min du campus (16–30 min)</p>
     <p class="lieu">8047 zurich · arrêt <b>Zürich, Goldackerweg</b> (3 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>logement 140 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>logement 140 m²</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 13/10/2026 — 12 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -1469,15 +1695,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="630"
          data-tprix="P1"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="non_meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>24</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/8003-zurich/86326344/" target="_blank" rel="noopener">8003 Zürich - CHF 630 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 630/mois charges comprises · dispo. 2026-11-01 · 24 min du campus (16–30 min)</p>
+    <p class="resume">Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 630/mois charges comprises · non meublé · dispo. 2026-11-01 · 24 min du campus (16–30 min)</p>
     <p class="lieu">8003 Zürich · arrêt <b>Zürich, Zwinglihaus</b> (1 min à pied) · ETH Zentrum 18 min</p>
-    <ul class="puces"><li>charges comprises</li><li>12 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#B5560F"
+          title="texte de l&#x27;annonce">Non meublé</li>
+      <li>charges comprises</li><li>12 m²</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 01/11/2026 — 31 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     <p class="genre">Préférence féminine annoncée — « preferably a woman ». Candidature possible, mais les chances sont faibles.</p>
@@ -1509,7 +1742,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="999"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>25</b><span>min</span>
   </div>
@@ -1517,7 +1751,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/bergstrasse-57-8032-zurich/86333355/" target="_blank" rel="noopener">Bergstrasse 57, 8032 Zürich - CHF 999 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 1 pièce · CHF 999/mois charges comprises · meublé · location temporaire · dispo. 2026-09-11 · 25 min du campus (16–30 min)</p>
     <p class="lieu">Bergstrasse 57, 8032 Zürich · arrêt <b>Zürich, Hofstrasse</b> (2 min à pied) · ETH Zentrum 9 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 11/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1549,7 +1789,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1120"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>26</b><span>min</span>
   </div>
@@ -1557,7 +1798,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/in-der-halden-4-8902-urdorf/86295668/" target="_blank" rel="noopener">In der Halden, 4, 8902 Urdorf - CHF 1’120 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 1&#x27;120/mois charges comprises · meublé · 26 min du campus (16–30 min)</p>
     <p class="lieu">In der Halden, 4, 8902 Urdorf · arrêt <b>Urdorf, Bahnhof-/Bergstrasse</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>12 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>charges comprises</li><li>12 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1589,7 +1836,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1120"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>26</b><span>min</span>
   </div>
@@ -1597,7 +1845,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/in-der-halden-4-8902-urdorf/86295677/" target="_blank" rel="noopener">In der Halden, 4, 8902 Urdorf - CHF 1’120 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 1&#x27;120/mois charges comprises · meublé · 26 min du campus (16–30 min)</p>
     <p class="lieu">In der Halden, 4, 8902 Urdorf · arrêt <b>Urdorf, Bahnhof-/Bergstrasse</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>12 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>charges comprises</li><li>12 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1629,7 +1883,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="600"
          data-tprix="P1"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>26</b><span>min</span>
   </div>
@@ -1637,7 +1892,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/im-tiergarten-6a-8055-zurich/86339203/" target="_blank" rel="noopener">Im Tiergarten 6A, 8055 Zürich - CHF 600 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 14 m² · 1 pièce · CHF 600/mois charges comprises · meublé · location temporaire · 26 min du campus (16–30 min)</p>
     <p class="lieu">Im Tiergarten 6A, 8055 Zürich · arrêt <b>Zürich, Höfliweg</b> (1 min à pied) · ETH Zentrum 22 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>14 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>14 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1669,7 +1930,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="790"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>28</b><span>min</span>
   </div>
@@ -1677,7 +1939,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/zelgstrasse-19-8003-zurich/86319594/" target="_blank" rel="noopener">Zelgstrasse 19, 8003 Zürich - CHF 790</a></h3>
     <p class="resume">Colocation (chambre en WG) · 22 m² · 1 pièce · CHF 790/mois charges comprises · 28 min du campus (16–30 min)</p>
     <p class="lieu">Zelgstrasse 19, 8003 Zürich · arrêt <b>Zürich, Hertersteg</b> (1 min à pied) · ETH Zentrum 19 min</p>
-    <ul class="puces"><li>charges comprises</li><li>22 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>22 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1709,7 +1977,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1300"
          data-tprix="P3"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>28</b><span>min</span>
   </div>
@@ -1717,7 +1986,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/buhlstrasse-10-8055-zurich/86307338/" target="_blank" rel="noopener">Bühlstrasse 10, 8055 Zürich - CHF 1’300 excl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;300/mois charges comprises · meublé · dispo. 2026-10-01 · 28 min du campus (16–30 min)</p>
     <p class="lieu">Bühlstrasse 10, 8055 Zürich · arrêt <b>Zürich, Goldbrunnenplatz</b> (4 min à pied) · ETH Zentrum 21 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -1749,7 +2024,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="0"
          data-tprix="P?"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>28</b><span>min</span>
   </div>
@@ -1757,7 +2033,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/elisabethenstrasse-6-8004-zurich/86303531/" target="_blank" rel="noopener">Elisabethenstrasse 6, 8004 Zürich - by request</a></h3>
     <p class="resume">Appartement · 30 m² · 2 pièces · meublé · 28 min du campus (16–30 min)</p>
     <p class="lieu">Elisabethenstrasse 6, 8004 Zürich · arrêt <b>Zürich Wiedikon</b> (2 min à pied) · ETH Zentrum 15 min</p>
-    <ul class="puces"><li>meublé</li><li>30 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>30 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1789,7 +2071,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1300"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>28</b><span>min</span>
   </div>
@@ -1797,7 +2080,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/birmensdorferstrasse-450-8055-zurich/86291662/" target="_blank" rel="noopener">Birmensdorferstrasse 450,, 8055 Zürich - CHF 1’300 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;300/mois charges comprises · 28 min du campus (16–30 min)</p>
     <p class="lieu">Birmensdorferstrasse 450,, 8055 Zürich · arrêt <b>Zürich, Schaufelbergerstrasse</b> (2 min à pied) · ETH Zentrum 22 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1829,15 +2118,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1000"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>29</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/brandstrasse-8952-schlieren/86331277/" target="_blank" rel="noopener">Brandstrasse, 8952 Schlieren - CHF 1’000</a></h3>
-    <p class="resume">Appartement · 15 m² · 1 pièce · CHF 1&#x27;000/mois charges comprises · 29 min du campus (16–30 min)</p>
+    <p class="resume">Appartement · 15 m² · 1 pièce · CHF 1&#x27;000/mois charges comprises · meublé · 29 min du campus (16–30 min)</p>
     <p class="lieu">Brandstrasse, 8952 Schlieren · arrêt <b>Schlieren, Am Rietpark</b> (1 min à pied) · ETH Zentrum 29 min</p>
-    <ul class="puces"><li>charges comprises</li><li>15 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li><li>15 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1869,7 +2165,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1030"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>29</b><span>min</span>
   </div>
@@ -1877,7 +2174,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/plattenstrasse-3-8152-glattbrugg/86331302/" target="_blank" rel="noopener">Plattenstrasse 3, 8152 Glattbrugg - CHF 1’030 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;030/mois charges comprises · meublé · 29 min du campus (16–30 min)</p>
     <p class="lieu">Plattenstrasse 3, 8152 Glattbrugg · arrêt <b>Glattbrugg, Glatthof</b> (3 min à pied) · ETH Zentrum 33 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -1909,7 +2212,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1388"
          data-tprix="P4"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>29</b><span>min</span>
   </div>
@@ -1917,7 +2221,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/kleinzelglistrasse-6-8952-schlieren/86313325/" target="_blank" rel="noopener">Kleinzelglistrasse 6, 8952 Schlieren - CHF 1’388 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 80 m² · 3.5 pièces · CHF 1&#x27;388/mois charges comprises · dispo. 2026-10-16 · 29 min du campus (16–30 min)</p>
     <p class="lieu">Kleinzelglistrasse 6, 8952 Schlieren · arrêt <b>Schlieren, Reitmen</b> (1 min à pied) · ETH Zentrum 38 min</p>
-    <ul class="puces"><li>charges comprises</li><li>80 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>80 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--tardif">Libre dès le 16/10/2026 — 15 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -1949,15 +2259,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1100"
          data-tprix="P3"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>29</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/8304-wallisellen/86311343/" target="_blank" rel="noopener">8304 Wallisellen - CHF 1’100 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 1&#x27;100/mois charges comprises · meublé · dispo. 2026-11-01 · 29 min du campus (16–30 min)</p>
+    <p class="resume">Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 1&#x27;100/mois charges comprises · dispo. 2026-11-01 · 29 min du campus (16–30 min)</p>
     <p class="lieu">8304 Wallisellen · arrêt <b>Wallisellen, Schulhaus Bürgli</b> (2 min à pied) · ETH Zentrum 37 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>13 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="contradiction">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>13 m²</li>
+    </ul>
+    <p class="ameub">Le portail annonce « meublé », le texte dit le contraire. À faire préciser avant toute visite.</p>
     <p class="dispo dispo--tardif">Libre dès le 01/11/2026 — 31 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -1989,7 +2306,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="70"
          data-tprix="P1"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>29</b><span>min</span>
   </div>
@@ -1997,7 +2315,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/wetlistrasse-6-8032-zurich/86335770/" target="_blank" rel="noopener">Wetlistrasse 6, 8032 Zürich - CHF 70 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 70/mois charges comprises · meublé · 29 min du campus (16–30 min)</p>
     <p class="lieu">Wetlistrasse 6, 8032 Zürich · arrêt <b>Zürich, Wetlistrasse</b> (1 min à pied) · ETH Zentrum 15 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>15 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li><li>15 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2029,15 +2353,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="950"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="non_meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>30</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/am-wasser-30-8600-dubendorf/86333746/" target="_blank" rel="noopener">Am Wasser 30, 8600 Dübendorf - CHF 950 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 950/mois charges comprises · location temporaire · 30 min du campus (16–30 min)</p>
+    <p class="resume">Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 950/mois charges comprises · non meublé · location temporaire · 30 min du campus (16–30 min)</p>
     <p class="lieu">Am Wasser 30, 8600 Dübendorf · arrêt <b>Wallisellen, Neugut</b> (2 min à pied) · ETH Zentrum 31 min</p>
-    <ul class="puces"><li>temporaire</li><li>charges comprises</li><li>13 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#B5560F"
+          title="texte de l&#x27;annonce">Non meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>13 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2069,7 +2400,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1300"
          data-tprix="P3"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>30</b><span>min</span>
   </div>
@@ -2077,7 +2409,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/wiesenstrasse-14b-8952-schlieren/86307499/" target="_blank" rel="noopener">Wiesenstrasse 14b, 8952 Schlieren - CHF 1’300 excl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 97 m² · 1 pièce · CHF 1&#x27;300/mois charges comprises · meublé · location temporaire · dispo. 2026-10-15 · 30 min du campus (16–30 min)</p>
     <p class="lieu">Wiesenstrasse 14b, 8952 Schlieren · arrêt <b>Schlieren, Am Rietpark</b> (2 min à pied) · ETH Zentrum 30 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>logement 97 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>logement 97 m²</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 15/10/2026 — 14 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -2109,7 +2447,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1040"
          data-tprix="P3"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#3d7a2e">
     <b>30</b><span>min</span>
   </div>
@@ -2117,7 +2456,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/obere-reppischstr-61-8953-dietikon/86295437/" target="_blank" rel="noopener">Obere Reppischstr. 61, 8953 Dietikon - CHF 1’040 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 34 m² · 1 pièce · CHF 1&#x27;040/mois charges comprises · dispo. 2026-11-01 · 30 min du campus (16–30 min)</p>
     <p class="lieu">Obere Reppischstr. 61, 8953 Dietikon · arrêt <b>Dietikon, Oberdorf</b> (1 min à pied) · ETH Zentrum 33 min</p>
-    <ul class="puces"><li>charges comprises</li><li>34 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>34 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--tardif">Libre dès le 01/11/2026 — 31 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -2158,7 +2503,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1300"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>31</b><span>min</span>
   </div>
@@ -2166,7 +2512,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8008-zurich/86335592/" target="_blank" rel="noopener">8008 Zürich - CHF 1’300 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 120 m² · 1 pièce · CHF 1&#x27;300/mois charges comprises · location temporaire · 31 min du campus (31–45 min)</p>
     <p class="lieu">8008 Zürich · arrêt <b>Zürich, Höschgasse</b> (2 min à pied) · ETH Zentrum 14 min</p>
-    <ul class="puces"><li>temporaire</li><li>charges comprises</li><li>logement 120 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>temporaire</li><li>charges comprises</li><li>logement 120 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2198,7 +2550,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1460"
          data-tprix="P4"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>31</b><span>min</span>
   </div>
@@ -2206,7 +2559,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8008-zurich/86321775/" target="_blank" rel="noopener">8008 Zürich - CHF 1’460 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 69 m² · 1 pièce · CHF 1&#x27;460/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 31 min du campus (31–45 min)</p>
     <p class="lieu">8008 Zürich · arrêt <b>Zürich, Höschgasse</b> (2 min à pied) · ETH Zentrum 14 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>logement 69 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>logement 69 m²</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -2238,15 +2597,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1600"
          data-tprix="P4"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="partiel">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>32</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/seefeldstrasse147-8008-zurich/86291614/" target="_blank" rel="noopener">Seefeldstrasse147, 8008 zurich - CHF 1’600 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1&#x27;600/mois charges comprises · 32 min du campus (31–45 min)</p>
+    <p class="resume">Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1&#x27;600/mois charges comprises · partiellement meublé · 32 min du campus (31–45 min)</p>
     <p class="lieu">Seefeldstrasse147, 8008 zurich · arrêt <b>Zürich, Fröhlichstrasse</b> (2 min à pied) · ETH Zentrum 15 min</p>
-    <ul class="puces"><li>charges comprises</li><li>18 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#A8770F"
+          title="texte de l&#x27;annonce">Partiellement meublé</li>
+      <li>charges comprises</li><li>18 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2278,7 +2644,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1560"
          data-tprix="P4"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>32</b><span>min</span>
   </div>
@@ -2286,7 +2653,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/schonenwerdstrasse-3-8952-schlieren/86230059/" target="_blank" rel="noopener">Schönenwerdstrasse 3, 8952 Schlieren - CHF 1’560 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 49 m² · 2.5 pièces · CHF 1&#x27;560/mois charges comprises · 32 min du campus (31–45 min)</p>
     <p class="lieu">Schönenwerdstrasse 3, 8952 Schlieren · arrêt <b>Schlieren, Spital Limmattal</b> (2 min à pied) · ETH Zentrum 38 min</p>
-    <ul class="puces"><li>charges comprises</li><li>49 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>49 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2318,7 +2691,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1075"
          data-tprix="P3"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>34</b><span>min</span>
   </div>
@@ -2326,7 +2700,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8055-zurich/86307318/" target="_blank" rel="noopener">8055 Zürich - CHF 1’075 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;075/mois charges comprises · dispo. 2026-09-06 · 34 min du campus (31–45 min)</p>
     <p class="lieu">8055 Zürich · arrêt <b>Zürich Triemli</b> (3 min à pied) · ETH Zentrum 28 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--ideal">Libre dès le 06/09/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -2358,7 +2738,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1250"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>36</b><span>min</span>
   </div>
@@ -2366,7 +2747,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/lerchenweg-32-8302-kloten/86307320/" target="_blank" rel="noopener">Lerchenweg 32, 8302 Kloten - CHF 1’250 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 1&#x27;250/mois charges comprises · meublé · 36 min du campus (31–45 min)</p>
     <p class="lieu">Lerchenweg 32, 8302 Kloten · arrêt <b>Kloten, Wallisellenstrasse</b> (2 min à pied) · ETH Zentrum 38 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>13 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>charges comprises</li><li>13 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2398,7 +2785,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1499"
          data-tprix="P4"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>36</b><span>min</span>
   </div>
@@ -2406,7 +2794,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/eibenstrasse-21-8045-zurich/86304330/" target="_blank" rel="noopener">Eibenstrasse 21, 8045 Zurich - CHF 1’499 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 1&#x27;499/mois charges comprises · meublé · 36 min du campus (31–45 min)</p>
     <p class="lieu">Eibenstrasse 21, 8045 Zurich · arrêt <b>Zürich Giesshübel</b> (2 min à pied) · ETH Zentrum 25 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2438,15 +2832,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="854"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="non_meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>38</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/8600-dubendorg/86287895/" target="_blank" rel="noopener">8600 Dübendorg - CHF 854 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 854/mois charges comprises · dispo. 2026-10-01 · 38 min du campus (31–45 min)</p>
+    <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 854/mois charges comprises · non meublé · dispo. 2026-10-01 · 38 min du campus (31–45 min)</p>
     <p class="lieu">8600 Dübendorg · arrêt <b>Dübendorf, Post</b> (1 min à pied) · ETH Zentrum 29 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#B5560F"
+          title="texte de l&#x27;annonce">Non meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -2478,7 +2879,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="890"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>39</b><span>min</span>
   </div>
@@ -2486,7 +2888,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8604-volketswil/86339150/" target="_blank" rel="noopener">8604 Volketswil - CHF 890 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 11 m² · 1 pièce · CHF 890/mois charges comprises · 39 min du campus (31–45 min)</p>
     <p class="lieu">8604 Volketswil · arrêt <b>Volketswil, Chappeli</b> (2 min à pied) · ETH Zentrum 39 min</p>
-    <ul class="puces"><li>charges comprises</li><li>11 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>11 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2518,7 +2926,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1200"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>39</b><span>min</span>
   </div>
@@ -2526,7 +2935,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8952-schlieren/86333632/" target="_blank" rel="noopener">8952 Schlieren - CHF 1’200 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 14 m² · 1 pièce · CHF 1&#x27;200/mois charges comprises · meublé · 39 min du campus (31–45 min)</p>
     <p class="lieu">8952 Schlieren · arrêt <b>Schlieren</b> (1 min à pied) · ETH Zentrum 45 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>14 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li><li>14 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2558,7 +2973,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="930"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>39</b><span>min</span>
   </div>
@@ -2566,7 +2982,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8952-schlieren/86307465/" target="_blank" rel="noopener">8952 Schlieren - CHF 930 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 930/mois charges comprises · meublé · dispo. 2026-10-01 · 39 min du campus (31–45 min)</p>
     <p class="lieu">8952 Schlieren · arrêt <b>Schlieren</b> (1 min à pied) · ETH Zentrum 45 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -2598,7 +3020,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="715"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>39</b><span>min</span>
   </div>
@@ -2606,7 +3029,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8952-schlieren/86321794/" target="_blank" rel="noopener">8952 Schlieren - CHF 715 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 715/mois charges comprises · meublé · 39 min du campus (31–45 min)</p>
     <p class="lieu">8952 Schlieren · arrêt <b>Schlieren</b> (1 min à pied) · ETH Zentrum 45 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li><li>15 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>charges comprises</li><li>15 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2638,15 +3067,22 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="685"
          data-tprix="P1"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="non_meuble">
   <div class="fiche__minutes" style="--bande:#a8770f">
     <b>41</b><span>min</span>
   </div>
   <div class="fiche__corps">
     <h3><a href="https://flatfox.ch/en/flat/alte-landstrasse-170-8700-kusnacht/86333821/" target="_blank" rel="noopener">Alte Landstrasse, 170, 8700 Küsnacht - CHF 685 incl. utilities per month</a></h3>
-    <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 685/mois charges comprises · dispo. 2026-10-01 · 41 min du campus (31–45 min)</p>
+    <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 685/mois charges comprises · non meublé · dispo. 2026-10-01 · 41 min du campus (31–45 min)</p>
     <p class="lieu">Alte Landstrasse, 170, 8700 Küsnacht · arrêt <b>Küsnacht ZH, Ob. Heslibachstr.</b> (1 min à pied) · ETH Zentrum 28 min</p>
-    <ul class="puces"><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#B5560F"
+          title="texte de l&#x27;annonce">Non meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -2687,7 +3123,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1100"
          data-tprix="P3"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#b5560f">
     <b>47</b><span>min</span>
   </div>
@@ -2695,7 +3132,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/rietstrasse-20-8700-kusnacht/86339287/" target="_blank" rel="noopener">Rietstrasse 20, 8700 Küsnacht - CHF 1’100 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 180 m² · 1 pièce · CHF 1&#x27;100/mois charges comprises · 47 min du campus (46–60 min)</p>
     <p class="lieu">Rietstrasse 20, 8700 Küsnacht · arrêt <b>Itschnach, Fallacher</b> (4 min à pied) · ETH Zentrum 38 min</p>
-    <ul class="puces"><li>charges comprises</li><li>logement 180 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>logement 180 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2727,7 +3170,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="1000"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#b5560f">
     <b>47</b><span>min</span>
   </div>
@@ -2735,7 +3179,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8802-kilchberg/86326785/" target="_blank" rel="noopener">8802 Kilchberg - CHF 1’000 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1&#x27;000/mois charges comprises · meublé · location temporaire · 47 min du campus (46–60 min)</p>
     <p class="lieu">8802 Kilchberg · arrêt <b>Kilchberg ZH, Schwelle</b> (1 min à pied) · ETH Zentrum 31 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>18 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="texte de l&#x27;annonce">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>18 m²</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2767,7 +3217,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="950"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#b5560f">
     <b>48</b><span>min</span>
   </div>
@@ -2775,7 +3226,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8957-spreitenbach/86304367/" target="_blank" rel="noopener">8957 Spreitenbach - CHF 950</a></h3>
     <p class="resume">Appartement · 11 m² · 1 pièce · CHF 950/mois charges comprises · 48 min du campus (46–60 min)</p>
     <p class="lieu">8957 Spreitenbach · arrêt <b>Spreitenbach, Rütilochstrasse</b> (2 min à pied) · ETH Zentrum 51 min</p>
-    <ul class="puces"><li>charges comprises</li><li>11 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>11 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2807,7 +3264,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="835"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#b5560f">
     <b>51</b><span>min</span>
   </div>
@@ -2815,7 +3273,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8700-kusnacht/86328856/" target="_blank" rel="noopener">8700 Küsnacht - CHF 835 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 25 m² · 1 pièce · CHF 835/mois charges comprises · location temporaire · dispo. 2026-10-01 · 51 min du campus (46–60 min)</p>
     <p class="lieu">8700 Küsnacht · arrêt <b>Küsnacht ZH, Hesligenstrasse</b> (4 min à pied) · ETH Zentrum 38 min</p>
-    <ul class="puces"><li>temporaire</li><li>charges comprises</li><li>25 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>temporaire</li><li>charges comprises</li><li>25 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -2847,7 +3311,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="900"
          data-tprix="P2"
-         data-dispo="immediat">
+         data-dispo="immediat"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#b5560f">
     <b>54</b><span>min</span>
   </div>
@@ -2855,7 +3320,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/ruediweg-8404-winterthur/86310996/" target="_blank" rel="noopener">Ruediweg, 8404 Winterthur - CHF 900 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · 1 pièce · CHF 900/mois charges comprises · meublé · 54 min du campus (46–60 min)</p>
     <p class="lieu">Ruediweg, 8404 Winterthur · arrêt <b>Winterthur, Pfaffenwiesen</b> (2 min à pied) · ETH Zentrum 44 min</p>
-    <ul class="puces"><li>meublé</li><li>charges comprises</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>charges comprises</li>
+    </ul>
+    
     <p class="dispo dispo--immediat">Dispo. immédiate — Entrée possible tout de suite — compatible avec une arrivée en octobre.</p>
     
     
@@ -2887,7 +3358,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="SHARED"
          data-prix="935"
          data-tprix="P2"
-         data-dispo="ideal">
+         data-dispo="ideal"
+         data-meuble="a_confirmer">
   <div class="fiche__minutes" style="--bande:#b5560f">
     <b>55</b><span>min</span>
   </div>
@@ -2895,7 +3367,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/am-eulachpark-35-8404-winterthur/86333856/" target="_blank" rel="noopener">Am Eulachpark 35, 8404 Winterthur - CHF 935 incl. utilities per month</a></h3>
     <p class="resume">Colocation (chambre en WG) · logement 120 m² · 1 pièce · CHF 935/mois charges comprises · dispo. 2026-10-01 · 55 min du campus (46–60 min)</p>
     <p class="lieu">Am Eulachpark 35, 8404 Winterthur · arrêt <b>Winterthur, Grubenstr.</b> (2 min à pied) · ETH Zentrum 48 min</p>
-    <ul class="puces"><li>charges comprises</li><li>logement 120 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble puce-meuble--flou"
+          style="--c:#5A6360"
+          title="ni le texte ni la fiche ne le disent">Ameublement à confirmer</li>
+      <li>charges comprises</li><li>logement 120 m²</li>
+    </ul>
+    <p class="ameub">Rien dans l&#x27;annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l&#x27;écart de loyer : question à poser au premier message.</p>
     <p class="dispo dispo--ideal">Libre dès le 01/10/2026 — Entrée alignée sur le début du stage.</p>
     
     
@@ -2927,7 +3405,8 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
          data-type="APARTMENT"
          data-prix="1600"
          data-tprix="P4"
-         data-dispo="tardif">
+         data-dispo="tardif"
+         data-meuble="meuble">
   <div class="fiche__minutes" style="--bande:#b5560f">
     <b>60</b><span>min</span>
   </div>
@@ -2935,7 +3414,13 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     <h3><a href="https://flatfox.ch/en/flat/8404-winterthur/86307161/" target="_blank" rel="noopener">8404 Winterthur - CHF 1’600 incl. utilities per month</a></h3>
     <p class="resume">Appartement · 70 m² · 2.5 pièces · CHF 1&#x27;600/mois charges comprises · meublé · location temporaire · dispo. 2026-12-17 · 60 min du campus (46–60 min)</p>
     <p class="lieu">8404 Winterthur · arrêt <b>Winterthur, Oberwinterthur</b> (5 min à pied) · ETH Zentrum 50 min</p>
-    <ul class="puces"><li>meublé</li><li>temporaire</li><li>charges comprises</li><li>70 m²</li></ul>
+    <ul class="puces">
+      <li class="puce-meuble"
+          style="--c:#12805C"
+          title="case cochée par le bailleur">Meublé</li>
+      <li>temporaire</li><li>charges comprises</li><li>70 m²</li>
+    </ul>
+    
     <p class="dispo dispo--tardif">Libre dès le 17/12/2026 — 77 jours de stage sans logement — solution d&#x27;attente nécessaire.</p>
     
     
@@ -2975,6 +3460,12 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     cette page (15 écartées à la dernière collecte). Celles qui expriment une
     simple préférence sont conservées et signalées en orange : le choix revient
     à qui postule, pas à l'outil.</p>
+    <p><b>Ameublement :</b> la case « meublé » du portail est fausse une fois sur
+    sept, et décochée ne veut pas dire vide — seulement non renseignée. La
+    mention affichée croise donc la case et le texte de l'annonce, et assume un
+    état « à confirmer » quand aucun des deux ne le dit. Pour six mois, meubler
+    un logement vide coûte plus cher que l'écart de loyer : c'est la première
+    question à poser.</p>
     <h3>Le reste du dossier</h3>
     <p><a href="https://github.com/bongix/SaveMrA/blob/main/docs/CANDIDATURE.md">Le message à envoyer et le dossier à préparer</a> ·
     <a href="https://github.com/bongix/SaveMrA/blob/main/docs/GLOSSAIRE.md">Décoder une annonce en allemand</a> ·
@@ -2986,7 +3477,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
 
 <script>
 (function(){
-  var etat={bande:new Set(),tprix:new Set(),verac:0,langue:"",type:"",dispo:false,fiables:false};
+  var etat={bande:new Set(),tprix:new Set(),meuble:new Set(),verac:0,langue:"",type:"",dispo:false,fiables:false};
   var fiches=[].slice.call(document.querySelectorAll(".fiche"));
   function appliquer(){
     fiches.forEach(function(f){
@@ -2994,6 +3485,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
       if(etat.bande.size && !etat.bande.has(d.bande)) ok=false;
       if(+d.verac < etat.verac) ok=false;
       if(etat.tprix.size && !etat.tprix.has(d.tprix)) ok=false;
+      if(etat.meuble.size && !etat.meuble.has(d.meuble)) ok=false;
       if(etat.langue && d.langue!==etat.langue) ok=false;
       if(etat.type && d.type!==etat.type) ok=false;
       if(etat.dispo && !(d.dispo==="ideal"||d.dispo==="immediat"||d.dispo==="trop_tot")) ok=false;
@@ -3012,7 +3504,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
       document.getElementById("listes").appendChild(vide);}
     vide.hidden=(total>0);
   }
-  ["bande","tprix"].forEach(function(cle){
+  ["bande","tprix","meuble"].forEach(function(cle){
     document.querySelectorAll("[data-f="+cle+"]").forEach(function(b){
       b.addEventListener("click",function(){
         var on=b.getAttribute("aria-pressed")==="true";

@@ -7,7 +7,7 @@
 import json, sys, pathlib, statistics, datetime
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
-import commute, veracite, langue, exclusions
+import commute, veracite, langue, exclusions, ameublement
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 F_ANNONCES = RACINE / "data" / "annonces.json"
@@ -123,8 +123,13 @@ def resume_fr(a):
     if prix:
         p.append(f"CHF {int(prix):,}/mois".replace(",", "'") +
                  (" charges comprises" if a.get("charges_incluses") else " hors charges"))
-    if a.get("meuble"):
+    am = a.get("ameublement") or {}
+    if am.get("code") == "meuble":
         p.append("meublé")
+    elif am.get("code") == "partiel":
+        p.append("partiellement meublé")
+    elif am.get("code") == "non_meuble":
+        p.append("non meublé")
     if a.get("temporaire"):
         p.append("location temporaire")
     if a.get("date_emmenagement"):
@@ -211,6 +216,7 @@ def main(local=False):
         a["veracite"] = veracite.evaluer(a)
         a["dispo"] = disponibilite(a)
         a["tranche_prix"] = tranche_prix(_nombre(a.get("prix_chf")), criteres["tranches_prix"])
+        a["ameublement"] = ameublement.evaluer(a)
         a["resume_fr"] = resume_fr(a)
         if i % 20 == 0:
             print(f"  {i}/{len(base)}…", file=sys.stderr)

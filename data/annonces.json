@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-09-06T14:27:01",
+  "genere_le": "2026-09-06T14:33:44",
   "campus_reference": "hoenggerberg",
   "sejour": {
     "debut": "2026-10-01",
@@ -152,7 +152,15 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
-      "resume_fr": "Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 1'385/mois charges comprises · dispo. 2026-10-01 · 9 min du campus (≤ 15 min)"
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 1'385/mois charges comprises · meublé · dispo. 2026-10-01 · 9 min du campus (≤ 15 min)"
     },
     {
       "id": "flatfox-86339243",
@@ -252,6 +260,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 815/mois charges comprises · 13 min du campus (≤ 15 min)"
     },
@@ -359,6 +375,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'260/mois charges comprises · meublé · location temporaire · 13 min du campus (≤ 15 min)"
     },
     {
@@ -464,6 +488,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'140/mois charges comprises · meublé · dispo. 2026-09-01 · 13 min du campus (≤ 15 min)"
     },
@@ -577,6 +609,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Colocation (chambre en WG) · 19 m² · 1 pièce · CHF 1'100/mois charges comprises · 13 min du campus (≤ 15 min)"
     },
     {
@@ -689,7 +729,15 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
-      "resume_fr": "Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1'377/mois charges comprises · dispo. 2026-11-01 · 15 min du campus (≤ 15 min)"
+      "ameublement": {
+        "code": "non_meuble",
+        "label": "Non meublé",
+        "couleur": "#B5560F",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": "La chambre est vide ; seules les parties communes sont meublées. Compter un lit, un bureau et une armoire à acheter puis à revendre."
+      },
+      "resume_fr": "Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1'377/mois charges comprises · non meublé · dispo. 2026-11-01 · 15 min du campus (≤ 15 min)"
     },
     {
       "id": "flatfox-86283815",
@@ -804,6 +852,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Appartement · 70 m² · 3.5 pièces · CHF 1'300/mois charges comprises · 16 min du campus (16–30 min)"
     },
     {
@@ -909,6 +965,14 @@
       "tranche_prix": {
         "code": "P4",
         "label": "1 301–1 600"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'600/mois charges comprises · 17 min du campus (16–30 min)"
     },
@@ -1018,6 +1082,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'600/mois charges comprises · 17 min du campus (16–30 min)"
     },
     {
@@ -1124,6 +1196,14 @@
         "code": "P2",
         "label": "701–1 000"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 925/mois charges comprises · meublé · location temporaire · dispo. 2026-10-13 · 18 min du campus (16–30 min)"
     },
     {
@@ -1224,6 +1304,14 @@
       "tranche_prix": {
         "code": "P4",
         "label": "1 301–1 600"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Appartement · 3.5 pièces · CHF 1'500/mois charges comprises · location temporaire · 18 min du campus (16–30 min)"
     },
@@ -1333,6 +1421,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Appartement · 44 m² · 2 pièces · CHF 900/mois charges comprises · meublé · location temporaire · dispo. 2026-09-12 · 18 min du campus (16–30 min)"
     },
@@ -1452,6 +1548,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · logement 76 m² · 1 pièce · CHF 1'350/mois charges comprises · meublé · dispo. 2026-09-15 · 19 min du campus (16–30 min)"
     },
     {
@@ -1554,6 +1658,14 @@
       "tranche_prix": {
         "code": "P4",
         "label": "1 301–1 600"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Appartement · 2 pièces · CHF 1'400/mois charges comprises · meublé · location temporaire · dispo. 2026-10-06 · 19 min du campus (16–30 min)"
     },
@@ -1667,6 +1779,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'300/mois charges comprises · meublé · 20 min du campus (16–30 min)"
     },
     {
@@ -1778,6 +1898,14 @@
       "tranche_prix": {
         "code": "P4",
         "label": "1 301–1 600"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · logement 172 m² · 1 pièce · CHF 1'520/mois charges comprises · meublé · dispo. 2026-09-01 · 20 min du campus (16–30 min)"
     },
@@ -1893,7 +2021,15 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
-      "resume_fr": "Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1'377/mois charges comprises · dispo. 2026-11-01 · 21 min du campus (16–30 min)"
+      "ameublement": {
+        "code": "partiel",
+        "label": "Partiellement meublé",
+        "couleur": "#A8770F",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Colocation (chambre en WG) · logement 95 m² · 1 pièce · CHF 1'377/mois charges comprises · partiellement meublé · dispo. 2026-11-01 · 21 min du campus (16–30 min)"
     },
     {
       "id": "flatfox-86307449",
@@ -2000,6 +2136,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 985/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 21 min du campus (16–30 min)"
     },
@@ -2109,6 +2253,14 @@
         "code": "P2",
         "label": "701–1 000"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 990/mois charges comprises · meublé · dispo. 2026-09-01 · 21 min du campus (16–30 min)"
     },
     {
@@ -2216,6 +2368,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 990/mois charges comprises · meublé · 21 min du campus (16–30 min)"
     },
@@ -2325,6 +2485,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'500/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 21 min du campus (16–30 min)"
     },
     {
@@ -2425,6 +2593,14 @@
       "tranche_prix": {
         "code": "P1",
         "label": "≤ 700"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 680/mois charges comprises · meublé · location temporaire · 22 min du campus (16–30 min)"
     },
@@ -2531,6 +2707,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'100/mois charges comprises · meublé · dispo. 2026-09-15 · 23 min du campus (16–30 min)"
     },
@@ -2646,6 +2830,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1'350/mois charges comprises · meublé · dispo. 2026-10-01 · 23 min du campus (16–30 min)"
     },
     {
@@ -2754,6 +2946,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'400/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 23 min du campus (16–30 min)"
     },
     {
@@ -2856,6 +3056,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Appartement · 3.5 pièces · CHF 990/mois charges comprises · meublé · location temporaire · dispo. 2026-10-05 · 23 min du campus (16–30 min)"
     },
@@ -2963,7 +3171,15 @@
         "code": "P2",
         "label": "701–1 000"
       },
-      "resume_fr": "Appartement · 1 pièce · CHF 938/mois charges comprises · 23 min du campus (16–30 min)"
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Appartement · 1 pièce · CHF 938/mois charges comprises · meublé · 23 min du campus (16–30 min)"
     },
     {
       "id": "flatfox-86336532",
@@ -3075,6 +3291,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 24 m² · 1 pièce · CHF 1'100/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 24 min du campus (16–30 min)"
     },
     {
@@ -3182,6 +3406,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Appartement · 14 m² · 1 pièce · CHF 1'011/mois charges comprises · dispo. 2026-10-01 · 24 min du campus (16–30 min)"
     },
     {
@@ -3287,6 +3519,14 @@
       "tranche_prix": {
         "code": "P4",
         "label": "1 301–1 600"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 1'390/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 24 min du campus (16–30 min)"
     },
@@ -3401,6 +3641,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · logement 140 m² · 1 pièce · CHF 1'280/mois charges comprises · meublé · location temporaire · dispo. 2026-10-13 · 24 min du campus (16–30 min)"
     },
@@ -3519,7 +3767,15 @@
         "code": "P1",
         "label": "≤ 700"
       },
-      "resume_fr": "Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 630/mois charges comprises · dispo. 2026-11-01 · 24 min du campus (16–30 min)"
+      "ameublement": {
+        "code": "non_meuble",
+        "label": "Non meublé",
+        "couleur": "#B5560F",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 630/mois charges comprises · non meublé · dispo. 2026-11-01 · 24 min du campus (16–30 min)"
     },
     {
       "id": "flatfox-86333355",
@@ -3625,6 +3881,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Appartement · 1 pièce · CHF 999/mois charges comprises · meublé · location temporaire · dispo. 2026-09-11 · 25 min du campus (16–30 min)"
     },
@@ -3738,6 +4002,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 1'120/mois charges comprises · meublé · 26 min du campus (16–30 min)"
     },
     {
@@ -3849,6 +4121,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 12 m² · 1 pièce · CHF 1'120/mois charges comprises · meublé · 26 min du campus (16–30 min)"
     },
@@ -3964,6 +4244,14 @@
         "code": "P1",
         "label": "≤ 700"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 14 m² · 1 pièce · CHF 600/mois charges comprises · meublé · location temporaire · 26 min du campus (16–30 min)"
     },
     {
@@ -4070,6 +4358,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Colocation (chambre en WG) · 22 m² · 1 pièce · CHF 790/mois charges comprises · 28 min du campus (16–30 min)"
     },
@@ -4182,6 +4478,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'300/mois charges comprises · meublé · dispo. 2026-10-01 · 28 min du campus (16–30 min)"
     },
@@ -4296,6 +4600,14 @@
         "code": "P?",
         "label": "prix non indiqué"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Appartement · 30 m² · 2 pièces · meublé · 28 min du campus (16–30 min)"
     },
     {
@@ -4401,6 +4713,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'300/mois charges comprises · 28 min du campus (16–30 min)"
     },
@@ -4516,7 +4836,15 @@
         "code": "P2",
         "label": "701–1 000"
       },
-      "resume_fr": "Appartement · 15 m² · 1 pièce · CHF 1'000/mois charges comprises · 29 min du campus (16–30 min)"
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Appartement · 15 m² · 1 pièce · CHF 1'000/mois charges comprises · meublé · 29 min du campus (16–30 min)"
     },
     {
       "id": "flatfox-86331302",
@@ -4621,6 +4949,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'030/mois charges comprises · meublé · 29 min du campus (16–30 min)"
     },
@@ -4742,6 +5078,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Appartement · 80 m² · 3.5 pièces · CHF 1'388/mois charges comprises · dispo. 2026-10-16 · 29 min du campus (16–30 min)"
     },
     {
@@ -4856,7 +5200,15 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
-      "resume_fr": "Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 1'100/mois charges comprises · meublé · dispo. 2026-11-01 · 29 min du campus (16–30 min)"
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "contradiction",
+        "note": "Le portail annonce « meublé », le texte dit le contraire. À faire préciser avant toute visite."
+      },
+      "resume_fr": "Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 1'100/mois charges comprises · dispo. 2026-11-01 · 29 min du campus (16–30 min)"
     },
     {
       "id": "flatfox-86335770",
@@ -4970,6 +5322,14 @@
         "code": "P1",
         "label": "≤ 700"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 70/mois charges comprises · meublé · 29 min du campus (16–30 min)"
     },
     {
@@ -5082,7 +5442,15 @@
         "code": "P2",
         "label": "701–1 000"
       },
-      "resume_fr": "Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 950/mois charges comprises · location temporaire · 30 min du campus (16–30 min)"
+      "ameublement": {
+        "code": "non_meuble",
+        "label": "Non meublé",
+        "couleur": "#B5560F",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 950/mois charges comprises · non meublé · location temporaire · 30 min du campus (16–30 min)"
     },
     {
       "id": "flatfox-86307499",
@@ -5193,6 +5561,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · logement 97 m² · 1 pièce · CHF 1'300/mois charges comprises · meublé · location temporaire · dispo. 2026-10-15 · 30 min du campus (16–30 min)"
     },
@@ -5305,6 +5681,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Appartement · 34 m² · 1 pièce · CHF 1'040/mois charges comprises · dispo. 2026-11-01 · 30 min du campus (16–30 min)"
     },
@@ -5420,6 +5804,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Colocation (chambre en WG) · logement 120 m² · 1 pièce · CHF 1'300/mois charges comprises · location temporaire · 31 min du campus (31–45 min)"
     },
     {
@@ -5534,6 +5926,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · logement 69 m² · 1 pièce · CHF 1'460/mois charges comprises · meublé · location temporaire · dispo. 2026-10-01 · 31 min du campus (31–45 min)"
     },
     {
@@ -5646,7 +6046,15 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
-      "resume_fr": "Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1'600/mois charges comprises · 32 min du campus (31–45 min)"
+      "ameublement": {
+        "code": "partiel",
+        "label": "Partiellement meublé",
+        "couleur": "#A8770F",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1'600/mois charges comprises · partiellement meublé · 32 min du campus (31–45 min)"
     },
     {
       "id": "flatfox-86230059",
@@ -5764,6 +6172,14 @@
         "code": "P4",
         "label": "1 301–1 600"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Appartement · 49 m² · 2.5 pièces · CHF 1'560/mois charges comprises · 32 min du campus (31–45 min)"
     },
     {
@@ -5871,6 +6287,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'075/mois charges comprises · dispo. 2026-09-06 · 34 min du campus (31–45 min)"
     },
@@ -5984,6 +6408,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 13 m² · 1 pièce · CHF 1'250/mois charges comprises · meublé · 36 min du campus (31–45 min)"
     },
     {
@@ -6089,6 +6521,14 @@
       "tranche_prix": {
         "code": "P4",
         "label": "1 301–1 600"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 1'499/mois charges comprises · meublé · 36 min du campus (31–45 min)"
     },
@@ -6198,7 +6638,15 @@
         "code": "P2",
         "label": "701–1 000"
       },
-      "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 854/mois charges comprises · dispo. 2026-10-01 · 38 min du campus (31–45 min)"
+      "ameublement": {
+        "code": "non_meuble",
+        "label": "Non meublé",
+        "couleur": "#B5560F",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 854/mois charges comprises · non meublé · dispo. 2026-10-01 · 38 min du campus (31–45 min)"
     },
     {
       "id": "flatfox-86339150",
@@ -6311,6 +6759,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Colocation (chambre en WG) · 11 m² · 1 pièce · CHF 890/mois charges comprises · 39 min du campus (31–45 min)"
     },
@@ -6426,6 +6882,14 @@
         "code": "P3",
         "label": "1 001–1 300"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 14 m² · 1 pièce · CHF 1'200/mois charges comprises · meublé · 39 min du campus (31–45 min)"
     },
     {
@@ -6534,6 +6998,14 @@
         "code": "P2",
         "label": "701–1 000"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 930/mois charges comprises · meublé · dispo. 2026-10-01 · 39 min du campus (31–45 min)"
     },
     {
@@ -6637,6 +7109,14 @@
         "code": "P2",
         "label": "701–1 000"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 15 m² · 1 pièce · CHF 715/mois charges comprises · meublé · 39 min du campus (31–45 min)"
     },
     {
@@ -6738,7 +7218,15 @@
         "code": "P1",
         "label": "≤ 700"
       },
-      "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 685/mois charges comprises · dispo. 2026-10-01 · 41 min du campus (31–45 min)"
+      "ameublement": {
+        "code": "non_meuble",
+        "label": "Non meublé",
+        "couleur": "#B5560F",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
+      "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 685/mois charges comprises · non meublé · dispo. 2026-10-01 · 41 min du campus (31–45 min)"
     },
     {
       "id": "flatfox-86339287",
@@ -6849,6 +7337,14 @@
       "tranche_prix": {
         "code": "P3",
         "label": "1 001–1 300"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Colocation (chambre en WG) · logement 180 m² · 1 pièce · CHF 1'100/mois charges comprises · 47 min du campus (46–60 min)"
     },
@@ -6964,6 +7460,14 @@
         "code": "P2",
         "label": "701–1 000"
       },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "texte de l'annonce",
+        "note": null
+      },
       "resume_fr": "Colocation (chambre en WG) · 18 m² · 1 pièce · CHF 1'000/mois charges comprises · meublé · location temporaire · 47 min du campus (46–60 min)"
     },
     {
@@ -7066,6 +7570,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
       },
       "resume_fr": "Appartement · 11 m² · 1 pièce · CHF 950/mois charges comprises · 48 min du campus (46–60 min)"
     },
@@ -7175,6 +7687,14 @@
         "code": "P2",
         "label": "701–1 000"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Colocation (chambre en WG) · 25 m² · 1 pièce · CHF 835/mois charges comprises · location temporaire · dispo. 2026-10-01 · 51 min du campus (46–60 min)"
     },
     {
@@ -7280,6 +7800,14 @@
       "tranche_prix": {
         "code": "P2",
         "label": "701–1 000"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Colocation (chambre en WG) · 1 pièce · CHF 900/mois charges comprises · meublé · 54 min du campus (46–60 min)"
     },
@@ -7393,6 +7921,14 @@
         "code": "P2",
         "label": "701–1 000"
       },
+      "ameublement": {
+        "code": "a_confirmer",
+        "label": "Ameublement à confirmer",
+        "couleur": "#5A6360",
+        "sur": false,
+        "source": "ni le texte ni la fiche ne le disent",
+        "note": "Rien dans l'annonce ne le dit. Pour six mois, meubler un logement vide coûte plus cher que l'écart de loyer : question à poser au premier message."
+      },
       "resume_fr": "Colocation (chambre en WG) · logement 120 m² · 1 pièce · CHF 935/mois charges comprises · dispo. 2026-10-01 · 55 min du campus (46–60 min)"
     },
     {
@@ -7495,6 +8031,14 @@
       "tranche_prix": {
         "code": "P4",
         "label": "1 301–1 600"
+      },
+      "ameublement": {
+        "code": "meuble",
+        "label": "Meublé",
+        "couleur": "#12805C",
+        "sur": true,
+        "source": "case cochée par le bailleur",
+        "note": null
       },
       "resume_fr": "Appartement · 70 m² · 2.5 pièces · CHF 1'600/mois charges comprises · meublé · location temporaire · dispo. 2026-12-17 · 60 min du campus (46–60 min)"
     }

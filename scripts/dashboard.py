@@ -29,9 +29,8 @@ def carte(a):
     prix = a.get("prix_chf")
     alerte = v.get("bloquants") or []
 
+    am = a.get("ameublement") or {}
     puces = []
-    if a.get("meuble"):
-        puces.append("meublé")
     if a.get("temporaire"):
         puces.append("temporaire")
     if a.get("charges_incluses"):
@@ -51,7 +50,8 @@ def carte(a):
          data-type="{e(a.get('type',''))}"
          data-prix="{prix or 0}"
          data-tprix="{e((a.get('tranche_prix') or {}).get('code','P?'))}"
-         data-dispo="{e(d.get('code','inconnu'))}">
+         data-dispo="{e(d.get('code','inconnu'))}"
+         data-meuble="{e(am.get('code','a_confirmer'))}">
   <div class="fiche__minutes" style="--bande:{e(t.get('tranche_couleur','#888'))}">
     <b>{e(mins) if mins is not None else '—'}</b><span>min</span>
   </div>
@@ -65,7 +65,13 @@ def carte(a):
         e(t.get('resume', '')),
         f"ETH Zentrum {e(autre)} min" if autre is not None else '',
     ] if x)}</p>
-    <ul class="puces">{''.join(f'<li>{e(p)}</li>' for p in puces)}</ul>
+    <ul class="puces">
+      <li class="puce-meuble{'' if am.get('sur') else ' puce-meuble--flou'}"
+          style="--c:{e(am.get('couleur', '#888'))}"
+          title="{e(am.get('source', ''))}">{e(am.get('label', 'ameublement inconnu'))}</li>
+      {''.join(f'<li>{e(p)}</li>' for p in puces)}
+    </ul>
+    {'<p class="ameub">' + e(am['note']) + '</p>' if am.get('note') else ''}
     <p class="dispo dispo--{e(d.get('code','inconnu'))}">{e(d.get('label'))} — {e(d.get('detail'))}</p>
     {'<p class="alerte">⚠ ' + ' · '.join(e(x) for x in alerte) + '</p>' if alerte else ''}
     {'<p class="genre">Préférence féminine annoncée — ' + ' · '.join(e(m) for m in (a.get('genre') or {}).get('motifs', [])) + '. Candidature possible, mais les chances sont faibles.</p>' if (a.get('genre') or {}).get('niveau') == 'preference' else ''}
@@ -136,7 +142,7 @@ a{color:var(--accent)}
 
 /* ── tuiles ──────────────────────────────────────────── */
 .tuiles{display:grid;gap:10px;margin:22px 0 26px;
-  grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+  grid-template-columns:repeat(auto-fit,minmax(132px,1fr))}
 .tuile{background:var(--surface);border:1px solid var(--ligne);border-radius:3px;
   padding:14px 16px;box-shadow:var(--ombre);display:flex;flex-direction:column;gap:2px}
 .tuile b{font-family:var(--f-data);font-size:38px;font-weight:600;line-height:1;
@@ -206,6 +212,9 @@ input[type=range]{padding:0;accent-color:var(--accent);width:112px}
 .lieu b{color:var(--ink);font-weight:500}
 .puces{display:flex;flex-wrap:wrap;gap:5px;list-style:none;margin:0 0 6px;padding:0}
 .puces li{font-size:11.5px;background:var(--surface2);border-radius:2px;padding:1px 7px;color:var(--ink2)}
+.puce-meuble{color:#fff;background:var(--c);font-weight:500}
+.puce-meuble--flou{background:transparent;color:var(--c);border:1px dashed currentColor}
+.ameub{margin:5px 0 0;font-size:12.5px;color:var(--ink2);font-style:italic}
 .dispo{margin:0;font-size:12.5px;color:var(--ink2)}
 .dispo--ideal,.dispo--immediat{color:#12805C}
 :root[data-theme="dark"] .dispo--ideal,:root[data-theme="dark"] .dispo--immediat{color:#5FBF9B}
@@ -287,6 +296,12 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
       <option value="gsw">Suisse allemand</option><option value="en">Anglais</option>
       <option value="fr">Français</option><option value="it">Italien</option></select>
     </div>
+    <div class="grp"><label>Ameublement</label>
+      <button class="bouton" data-f="meuble" data-v="meuble" aria-pressed="false">Meublé</button>
+      <button class="bouton" data-f="meuble" data-v="partiel" aria-pressed="false">Partiel</button>
+      <button class="bouton" data-f="meuble" data-v="non_meuble" aria-pressed="false">Non meublé</button>
+      <button class="bouton" data-f="meuble" data-v="a_confirmer" aria-pressed="false">À confirmer</button>
+    </div>
     <div class="grp"><label for="ft">Type</label>
       <select id="ft"><option value="">tous</option><option value="SHARED">Colocation</option>
       <option value="APARTMENT">Appartement</option><option value="ROOM">Chambre</option>
@@ -313,6 +328,12 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
     cette page ($retirees écartées à la dernière collecte). Celles qui expriment une
     simple préférence sont conservées et signalées en orange : le choix revient
     à qui postule, pas à l'outil.</p>
+    <p><b>Ameublement :</b> la case « meublé » du portail est fausse une fois sur
+    sept, et décochée ne veut pas dire vide — seulement non renseignée. La
+    mention affichée croise donc la case et le texte de l'annonce, et assume un
+    état « à confirmer » quand aucun des deux ne le dit. Pour six mois, meubler
+    un logement vide coûte plus cher que l'écart de loyer : c'est la première
+    question à poser.</p>
     <h3>Le reste du dossier</h3>
     <p><a href="https://github.com/bongix/SaveMrA/blob/main/docs/CANDIDATURE.md">Le message à envoyer et le dossier à préparer</a> ·
     <a href="https://github.com/bongix/SaveMrA/blob/main/docs/GLOSSAIRE.md">Décoder une annonce en allemand</a> ·
@@ -324,7 +345,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
 
 <script>
 (function(){
-  var etat={bande:new Set(),tprix:new Set(),verac:0,langue:"",type:"",dispo:false,fiables:false};
+  var etat={bande:new Set(),tprix:new Set(),meuble:new Set(),verac:0,langue:"",type:"",dispo:false,fiables:false};
   var fiches=[].slice.call(document.querySelectorAll(".fiche"));
   function appliquer(){
     fiches.forEach(function(f){
@@ -332,6 +353,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
       if(etat.bande.size && !etat.bande.has(d.bande)) ok=false;
       if(+d.verac < etat.verac) ok=false;
       if(etat.tprix.size && !etat.tprix.has(d.tprix)) ok=false;
+      if(etat.meuble.size && !etat.meuble.has(d.meuble)) ok=false;
       if(etat.langue && d.langue!==etat.langue) ok=false;
       if(etat.type && d.type!==etat.type) ok=false;
       if(etat.dispo && !(d.dispo==="ideal"||d.dispo==="immediat"||d.dispo==="trop_tot")) ok=false;
@@ -350,7 +372,7 @@ footer h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var
       document.getElementById("listes").appendChild(vide);}
     vide.hidden=(total>0);
   }
-  ["bande","tprix"].forEach(function(cle){
+  ["bande","tprix","meuble"].forEach(function(cle){
     document.querySelectorAll("[data-f="+cle+"]").forEach(function(b){
       b.addEventListener("click",function(){
         var on=b.getAttribute("aria-pressed")==="true";
@@ -390,12 +412,14 @@ def construire():
     n_suspects = sum(1 for a in ann if (a.get("veracite") or {}).get("score", 100) < 40)
     n_dispo = sum(1 for a in ann if (a.get("dispo") or {}).get("ok"))
     n_proche = len(par_bande.get("A", [])) + len(par_bande.get("B", []))
+    n_ameuble = sum(1 for a in ann if (a.get("ameublement") or {}).get("code") == "meuble")
     langues = collections.Counter((a.get("langue") or {}).get("nom", "?") for a in ann)
 
     tuiles = [
         (n_proche, "à 30 min ou moins", "du campus de référence"),
         (n_fiables, "annonces crédibles", "véracité ≥ 60 %"),
         (n_dispo, "libres à temps", sejour.get("libelle", "")),
+        (n_ameuble, "meublés", "confirmé par l'annonce"),
         (n_suspects, "à écarter", "véracité < 40 %"),
     ]
 

@@ -88,6 +88,28 @@ Le risque réel ici est le faux positif. *« Mitbewohnerin oder Mitbewohner »*,
 une colocation mixte, pas une restriction : chaque règle est écrite pour les
 laisser passer, et le jeu de règles est vérifié contre ces cas.
 
+## Meublé ou pas — la question qui coûte le plus cher
+
+Pour six mois, meubler un logement vide (lit, bureau, armoire, à acheter puis à
+revendre en partant) coûte plus que l'écart de loyer entre un meublé et un vide.
+C'est donc un critère de premier rang, pas un détail de confort.
+
+Deux pièges dans les données, traités par `scripts/ameublement.py` :
+
+1. **La case « meublé » du portail est fausse une fois sur sept.** Neuf annonces
+   sur soixante-huit la laissent décochée alors que le texte dit
+   *« möbliertes Zimmer »*. On croise donc la case et le texte.
+2. **Décochée ne veut pas dire vide**, seulement « non renseignée ». D'où un
+   quatrième état assumé : **à confirmer**, qui est une question à poser, pas
+   une absence de meubles.
+
+| État | Ce que ça veut dire |
+|---|---|
+| **Meublé** | Le texte ou la fiche le dit |
+| **Partiellement meublé** | *teilmöbliert*, ou seules les parties communes le sont |
+| **Non meublé** | *unmöbliert* explicite. Si seules les parties communes sont meublées, c'est ici que l'annonce tombe : la chambre où l'on dort est vide. |
+| **À confirmer** | Ni le texte ni la fiche ne le disent — ou les deux se contredisent |
+
 ## Critères de classement
 
 **Tranches de trajet** (porte-à-porte, transports publics réels, arrivée 9 h un
@@ -115,7 +137,9 @@ comprises (`data/criteres.json`).
 **Encore ouvert :**
 
 1. Colocation acceptée, ou logement individuel exigé ?
-2. Meublé indispensable ? (pour 6 mois, oui en pratique)
+2. Meublé indispensable, ou MrA peut-il récupérer du mobilier sur place ?
+   L'outil affiche l'état pour chaque annonce, mais 20 sur 68 restent
+   « à confirmer » : autant de questions à poser au premier message.
 3. Le labo peut-il ouvrir un compte ETH / délivrer une attestation de stage ?
    — c'est la clé du Housing Office, et donc du meilleur gisement d'annonces
    saines du dossier.

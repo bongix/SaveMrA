@@ -55,6 +55,17 @@ quand tu l'as dit.
 > Best regards,
 > **[Nom]** · **[téléphone]** · **[e-mail]**
 
+## Les deux questions à glisser dans le premier message
+
+Quand l'annonce ne le dit pas — c'est le cas d'une sur trois — posez-les tout de
+suite : la réponse change la décision, et attendre la visite fait perdre trois
+jours sur un marché qui se joue en heures.
+
+- **Est-ce que la chambre est meublée ?** *« Ist das Zimmer möbliert (Bett,
+  Schrank, Schreibtisch)? »* / *« Is the room furnished — bed, wardrobe, desk? »*
+- **Une location de six mois est-elle possible ?** *« Wäre eine befristete Miete
+  von Oktober bis Ende März möglich? »*
+
 ## Le dossier à préparer avant le 1er octobre
 
 - [ ] Contrat / attestation de stage ETH (PDF)

@@ -62,6 +62,7 @@ scripts/commute.py           itinéraires réels via transport.opendata.ch
 scripts/veracite.py          scoring anti-arnaque
 scripts/langue.py            détection de langue
 scripts/exclusions.py        retrait des annonces réservées aux femmes
+scripts/ameublement.py       meublé / partiel / non meublé / à confirmer
 scripts/pipeline.py          orchestration
 scripts/dashboard.py         génération du tableau de bord
 scripts/publier.sh           collecte + page + push GitHub Pages, en une commande
